@@ -73,9 +73,9 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-8 px-8">
             <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
+            <span className="text-lg md:text-xl font-bold">• ESPECIALISTA EM ARQUITETURA PARA SAUDE</span>
             <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
+            <span className="text-lg md:text-xl font-bold">• 15 ANOS DE KNOWHOW</span>
           </div>
         </div>
       </div>
