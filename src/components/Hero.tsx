@@ -9,17 +9,23 @@ const Hero = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
+    // Removendo 'min-h-screen' para que o conteúdo defina a altura,
+    // garantindo que a faixa animada fique logo abaixo do conteúdo.
     <section className="relative w-full overflow-hidden bg-background">
-      {/* Container principal ajustado: padding lateral é aplicado aqui */}
+      {/* [REMOVIDO] Geometric Background Pattern 
+        Não precisamos das divs de círculos e formas aqui
+      */}
+
+      {/* Ajustando o padding superior do container para acomodar o Logo e o conteúdo */}
       <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-12">
         {/* Logo */}
         <div className="mb-12 md:mb-16 animate-fade-in">
           <img src={logoImage} alt="gstival - Arquitetura e Consultoria em Saúde" className="h-12 md:h-16 w-auto" />
         </div>
 
-        {/* Main Content - Usamos grid lg:grid-cols-2 */}
+        {/* Main Content - Adicionando pb-0 para que a imagem possa descer até o banner */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pb-0">
-          {/* Left Content (Texto e Botão) */}
+          {/* Left Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
             <div className="space-y-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
@@ -43,32 +49,22 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Right Content - Hero Image: Aqui fazemos a mágica! */}
+          {/* Right Content - Hero Image */}
           <div className="relative animate-slide-in-right">
+            {/* [REMOVIDO] A div de arredondamento e sombra. A imagem agora é renderizada diretamente. */}
             <div className="relative">
               <img
                 src={headerImage}
                 alt="Gustavo Stival - Arquiteto especialista em saúde"
-                className="w-full h-auto object-cover lg:max-w-none 
-                
-                /* DESKTOP (lg): 
-                   Remove a margem direita padrão do container (px-4).
-                   Ajusta a largura para estender a imagem.
-                */
-                lg:-mr-4 
-                
-                /* MOBILE:
-                   Em telas menores, a imagem ocupará 100% da largura da coluna, o que já a estende ao máximo
-                   (removendo o padding lateral do grid container).
-                */
-                "
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Scrolling Banner */}
+      {/* Scrolling Banner - Usamos mt-0 para garantir que ele esteja logo abaixo do conteúdo */}
+      {/* Em mobile (coluna única), a faixa ficará abaixo da imagem. Em desktop (duas colunas), ela ficará na base da seção */}
       <div className="relative bg-primary text-primary-foreground py-4 overflow-hidden mt-0">
         <div className="flex whitespace-nowrap animate-scroll-x">
           <div className="flex items-center space-x-8 px-8">
