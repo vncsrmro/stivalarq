@@ -9,22 +9,22 @@ const Hero = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-background">
-      {/* Geometric Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-64 h-64 border-2 border-primary rounded-full"></div>
-        <div className="absolute bottom-40 right-10 w-96 h-96 border-2 border-accent rotate-45"></div>
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 border-2 border-primary transform -translate-x-1/2 -translate-y-1/2"></div>
-      </div>
+    // Removendo 'min-h-screen' para que o conteúdo defina a altura,
+    // garantindo que a faixa animada fique logo abaixo do conteúdo.
+    <section className="relative w-full overflow-hidden bg-background">
+      {/* [REMOVIDO] Geometric Background Pattern 
+        Não precisamos das divs de círculos e formas aqui
+      */}
 
-      <div className="container relative z-10 mx-auto px-4 py-8 md:py-12">
+      {/* Ajustando o padding superior do container para acomodar o Logo e o conteúdo */}
+      <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-12">
         {/* Logo */}
         <div className="mb-12 md:mb-16 animate-fade-in">
           <img src={logoImage} alt="gstival - Arquitetura e Consultoria em Saúde" className="h-12 md:h-16 w-auto" />
         </div>
 
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        {/* Main Content - Adicionando pb-0 para que a imagem possa descer até o banner */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pb-0">
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
             <div className="space-y-4">
@@ -51,7 +51,8 @@ const Hero = () => {
 
           {/* Right Content - Hero Image */}
           <div className="relative animate-slide-in-right">
-            <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-strong)]">
+            {/* [REMOVIDO] A div de arredondamento e sombra. A imagem agora é renderizada diretamente. */}
+            <div className="relative">
               <img
                 src={headerImage}
                 alt="Gustavo Stival - Arquiteto especialista em saúde"
@@ -62,8 +63,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scrolling Banner */}
-      <div className="absolute bottom-0 left-0 right-0 bg-primary text-primary-foreground py-4 overflow-hidden">
+      {/* Scrolling Banner - Usamos mt-0 para garantir que ele esteja logo abaixo do conteúdo */}
+      {/* Em mobile (coluna única), a faixa ficará abaixo da imagem. Em desktop (duas colunas), ela ficará na base da seção */}
+      <div className="relative bg-primary text-primary-foreground py-4 overflow-hidden mt-0">
         <div className="flex whitespace-nowrap animate-scroll-x">
           <div className="flex items-center space-x-8 px-8">
             <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
