@@ -38,11 +38,11 @@ const Hero = () => {
               </p>
             </div>
 
-            <Button 
-              variant="hero" 
+            <Button
+              variant="hero"
               size="lg"
               className="w-full sm:w-auto text-base md:text-lg h-12 md:h-14 px-6 md:px-8 rounded-full"
-              onClick={() => window.open(whatsappUrl, '_blank')}
+              onClick={() => window.open(whatsappUrl, "_blank")}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               Vamos conversar?
@@ -52,9 +52,9 @@ const Hero = () => {
           {/* Right Content - Hero Image */}
           <div className="relative animate-slide-in-right">
             <div className="relative rounded-3xl overflow-hidden shadow-[var(--shadow-strong)]">
-              <img 
-                src={headerImage} 
-                alt="Gustavo Stival - Arquiteto especialista em saúde" 
+              <img
+                src={headerImage}
+                alt="Gustavo Stival - Arquiteto especialista em saúde"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -66,10 +66,10 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 bg-primary text-primary-foreground py-4 overflow-hidden">
         <div className="flex whitespace-nowrap animate-scroll-x">
           <div className="flex items-center space-x-8 px-8">
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
-            <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
+            <span className="text-lg md:text-xl font-bold"> • MAIS DE 11.000 M² PROJETADOS</span>
+            <span className="text-lg md:text-xl font-bold"> • ESPECIALISTA EM ARQUITETURA PARA SAUDE</span>
+            <span className="text-lg md:text-xl font-bold"> • MAIS DE 11.000 M² PROJETADOS</span>
+            <span className="text-lg md:text-xl font-bold"> • 15 ANOS DE KNOWHOW</span>
           </div>
           <div className="flex items-center space-x-8 px-8">
             <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
