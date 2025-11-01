@@ -53,9 +53,6 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">Serviços Prestados</h2>
-          <BR>
-            <p className="text-sm md:text-base text-muted-foreground mb-2">Minha área de atuação é</p>
-          </BR>
         </div>
 
         {/* Desktop Grid */}
