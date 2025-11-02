@@ -122,7 +122,7 @@ const Navbar = () => {
                   setIsOpen(false);
                 }}
               >
-                Contato via WhatsApp
+                Solicitar Orçamento
               </Button>
             </div>
           </div>
