@@ -28,7 +28,7 @@ const Navbar = () => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
-    
+
     const element = document.querySelector(href);
     if (element) {
       const offset = 80;
@@ -49,9 +49,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
-          : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -83,7 +81,7 @@ const Navbar = () => {
               className="ml-4 rounded-full"
               onClick={() => window.open(whatsappUrl, "_blank")}
             >
-              Contato
+              Solicitar Orçamento
             </Button>
           </div>
 
@@ -93,11 +91,7 @@ const Navbar = () => {
             className="lg:hidden p-2 rounded-lg hover:bg-muted/50 transition-colors"
             aria-label="Toggle menu"
           >
-            {isOpen ? (
-              <X className="h-6 w-6 text-foreground" />
-            ) : (
-              <Menu className="h-6 w-6 text-foreground" />
-            )}
+            {isOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
           </button>
         </div>
 
