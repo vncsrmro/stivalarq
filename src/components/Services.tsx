@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, FileCheck, Scale, ClipboardCheck, ChevronLeft, ChevronRight } from "lucide-react";
+import { Building2, FileCheck, Scale, ClipboardCheck, ChevronLeft, ChevronRight, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -33,6 +33,12 @@ const services = [
     title: "Gestão Estratégica de Projetos",
     description:
       "Integração completa entre consultoria arquitetônica, gestão de prazos e custos, garantindo que o projeto seja executado dentro do esperado e crie valor para o negócio.",
+  },
+  {
+    icon: Palette,
+    title: "Projetos de Interiores para Saúde",
+    description:
+      "Design de ambientes internos que priorizam conforto, higiene e bem-estar dos pacientes, criando espaços humanizados e funcionais.",
   },
 ];
 
