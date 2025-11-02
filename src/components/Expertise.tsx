@@ -8,8 +8,12 @@ const Expertise = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/30">
-      <div className="container mx-auto px-4">
+    <section id="expertise" className="py-16 md:py-24 bg-gradient-to-br from-secondary/20 via-background to-secondary/30 relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-10 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Image */}
           <div className="order-2 md:order-1 animate-scale-in">
@@ -24,8 +28,18 @@ const Expertise = () => {
 
           {/* Content */}
           <div className="order-1 md:order-2 space-y-6 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
-              Especialista em Arquitetura para a Saúde com mais de 11 anos de experiência:
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+              </span>
+              <span className="text-primary text-sm font-semibold">+ de 11.000 m² projetados</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+                Especialista em Arquitetura para a Saúde
+              </span>
+              <span className="text-foreground"> com mais de 11 anos de experiência</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground text-base md:text-lg">

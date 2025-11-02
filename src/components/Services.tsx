@@ -54,11 +54,14 @@ const Services = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">Serviços Prestados</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            Serviços Prestados
+          </h2>
+          <p className="text-muted-foreground mt-4 text-lg">Soluções completas para arquitetura em saúde</p>
         </div>
 
         {/* Desktop Grid */}

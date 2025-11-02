@@ -69,10 +69,12 @@ const Contact = () => {
   const email = "contato@stivalarq.com.br";
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/30">
+    <section id="contact" className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">Contato</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            Contato
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Se você busca um serviço técnico para seu projeto, consultoria, licenciamento, 
             regularização ou algo relacionado, entre em contato. Será um prazer ajudá-lo 

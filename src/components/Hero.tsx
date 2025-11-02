@@ -9,28 +9,23 @@ const Hero = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    // Removendo 'min-h-screen' para que o conteúdo defina a altura,
-    // garantindo que a faixa animada fique logo abaixo do conteúdo.
-    <section className="relative w-full overflow-hidden bg-background">
-      {/* [REMOVIDO] Geometric Background Pattern 
-        Não precisamos das divs de círculos e formas aqui
-      */}
-
-      {/* Ajustando o padding superior do container para acomodar o Logo e o conteúdo */}
+    <section id="hero" className="relative w-full overflow-hidden pt-20 bg-gradient-to-br from-background via-background to-secondary/20">
+      {/* Gradient Mesh Background */}
+      <div className="absolute inset-0 bg-[image:var(--gradient-mesh)] opacity-50" />
+      
       <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-12">
-        {/* Logo */}
-        <div className="mb-12 md:mb-16 animate-fade-in">
-          <img src={logoImage} alt="gstival - Arquitetura e Consultoria em Saúde" className="h-12 md:h-16 w-auto" />
-        </div>
 
         {/* Main Content - Adicionando pb-0 para que a imagem possa descer até o banner */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pb-0">
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
             <div className="space-y-4">
+              <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4 animate-glow">
+                <span className="text-primary text-sm font-semibold">✨ Especialista em Arquitetura para Saúde</span>
+              </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 <span className="text-foreground">Transformando Espaços, Elevando Cuidados: </span>
-                <span className="text-primary">Arquitetura Especializada em Saúde </span>
+                <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">Arquitetura Especializada em Saúde </span>
                 <span className="text-foreground">ao Seu Alcance!</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-xl">

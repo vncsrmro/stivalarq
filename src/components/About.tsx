@@ -8,7 +8,7 @@ const About = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 bg-gradient-to-b from-secondary/30 to-background relative overflow-hidden">
       {/* Background Text */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none hidden lg:block">
         <p className="text-[12rem] font-bold text-primary transform rotate-90 origin-center whitespace-nowrap">
@@ -21,7 +21,7 @@ const About = () => {
           {/* Content */}
           <div className="space-y-6 animate-fade-in">
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                 Gustavo Stival
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground uppercase tracking-wide">

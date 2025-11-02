@@ -45,12 +45,12 @@ const Clients = () => {
   }, [emblaApi]);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-muted/30 to-background">
+    <section id="clients" className="py-16 md:py-24 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-4 md:mb-6 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2">
-            Nossos Clientes
-          </h2>
+          <div className="text-center mb-4 md:mb-6 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+              Nossos Clientes
+            </h2>
           <p className="text-muted-foreground text-sm md:text-base">
             Empresas que confiam no nosso trabalho
           </p>
