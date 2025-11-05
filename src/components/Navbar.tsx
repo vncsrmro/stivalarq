@@ -9,7 +9,6 @@ const menuItems = [
   { label: "Serviços", href: "#services" },
   { label: "Sobre", href: "#about" },
   { label: "Clientes", href: "#clients" },
-  { label: "Portfólio", href: "#portfolio" },
   { label: "Contato", href: "#contact" },
 ];
 

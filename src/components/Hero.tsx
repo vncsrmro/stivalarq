@@ -13,13 +13,10 @@ const Hero = () => {
       {/* Gradient Mesh Background */}
       <div className="absolute inset-0 bg-[image:var(--gradient-mesh)] opacity-50" />
       
-      {/* Decorative floating circles */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-40 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }} />
-      
-      <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-12 pb-12 md:pb-16">
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-12">
+
+        {/* Main Content - Adicionando pb-0 para que a imagem possa descer até o banner */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center pb-0">
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8 animate-slide-in-left">
             <div className="space-y-4">
@@ -48,9 +45,9 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative animate-slide-in-right order-first lg:order-last">
-            <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:scale-[1.02]">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-accent/10 pointer-events-none" />
+          <div className="relative animate-slide-in-right">
+            {/* [REMOVIDO] A div de arredondamento e sombra. A imagem agora é renderizada diretamente. */}
+            <div className="relative">
               <img
                 src={headerImage}
                 alt="Gustavo Stival - Arquiteto especialista em saúde"
