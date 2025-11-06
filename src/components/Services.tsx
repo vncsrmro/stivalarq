@@ -54,14 +54,16 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
+    <section id="services" className="py-20 md:py-32 bg-gradient-to-b from-white via-neutral-50 to-neutral-100">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
             Serviços Prestados
           </h2>
-          <p className="text-muted-foreground mt-4 text-lg">Soluções completas para arquitetura em saúde</p>
+          <p className="text-muted-foreground mt-4 text-base md:text-lg max-w-2xl mx-auto">
+            Soluções completas para arquitetura em saúde
+          </p>
         </div>
 
         {/* Desktop Grid */}
@@ -69,15 +71,20 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="border-2 border-border hover:border-primary transition-all duration-300 hover:shadow-[var(--shadow-medium)] animate-scale-in group"
+              className="border-2 border-border bg-card hover:border-primary transition-all duration-500 hover:shadow-[var(--shadow-floating)] hover:-translate-y-3 animate-scale-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardContent className="p-6 space-y-4">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground" />
+              <CardContent className="p-6 md:p-8 space-y-4">
+                <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/5 flex items-center justify-center group-hover:scale-110 transition-all duration-500 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <service.icon className="relative z-10 w-8 h-8 text-primary group-hover:text-white transition-colors duration-500" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -85,38 +92,56 @@ const Services = () => {
 
         {/* Mobile Carousel */}
         <div className="md:hidden relative">
-          <Card className="border-2 border-border">
-            <CardContent className="p-6 space-y-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+          <Card className="border-2 border-border shadow-lg min-h-[320px]">
+            <CardContent className="p-6 space-y-4 flex flex-col h-full">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/5 flex items-center justify-center">
                 {(() => {
                   const IconComponent = services[currentIndex].icon;
-                  return <IconComponent className="w-7 h-7 text-primary" />;
+                  return <IconComponent className="w-8 h-8 text-primary" />;
                 })()}
               </div>
               <h3 className="text-xl font-bold text-foreground">{services[currentIndex].title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{services[currentIndex].description}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed flex-1">{services[currentIndex].description}</p>
             </CardContent>
           </Card>
 
+          {/* Progress Bar */}
+          <div className="mt-6 h-1 bg-border rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-300"
+              style={{ width: `${((currentIndex + 1) / services.length) * 100}%` }}
+            />
+          </div>
+
           {/* Carousel Controls */}
-          <div className="flex justify-center items-center gap-4 mt-6">
-            <Button variant="outline" size="icon" onClick={prevSlide} className="rounded-full">
-              <ChevronLeft className="h-4 w-4" />
+          <div className="flex justify-center items-center gap-4 mt-4">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              onClick={prevSlide} 
+              className="h-11 w-11 rounded-full border-2 hover:border-primary hover:bg-primary hover:text-white active:scale-95 transition-all"
+            >
+              <ChevronLeft className="h-5 w-5" />
             </Button>
             <div className="flex gap-2">
               {services.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex ? "bg-primary w-8" : "bg-border"
+                  className={`h-2 rounded-full transition-all ${
+                    index === currentIndex ? "bg-primary w-8" : "bg-border w-2"
                   }`}
-                  aria-label={`Go to slide ${index + 1}`}
+                  aria-label={`Ir para serviço ${index + 1}`}
                 />
               ))}
             </div>
-            <Button variant="outline" size="icon" onClick={nextSlide} className="rounded-full">
-              <ChevronRight className="h-4 w-4" />
+            <Button 
+              variant="outline" 
+              size="icon" 
+              onClick={nextSlide} 
+              className="h-11 w-11 rounded-full border-2 hover:border-primary hover:bg-primary hover:text-white active:scale-95 transition-all"
+            >
+              <ChevronRight className="h-5 w-5" />
             </Button>
           </div>
         </div>

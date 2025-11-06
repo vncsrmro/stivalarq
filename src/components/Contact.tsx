@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, Clock, Instagram, Send } from "lucide-react";
+import { Mail, Phone, Clock, Instagram, Send, CheckCircle2, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -25,10 +25,8 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      // Validate form data
       const validatedData = contactSchema.parse(formData);
       
-      // Format message for WhatsApp
       const whatsappNumber = "5519992109655";
       const message = encodeURIComponent(
         `*Nova mensagem do site*\n\n` +
@@ -37,10 +35,8 @@ const Contact = () => {
         `*Mensagem:*\n${validatedData.message}`
       );
       
-      // Open WhatsApp
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
       
-      // Reset form
       setFormData({ name: "", email: "", message: "" });
       
       toast({
@@ -69,92 +65,111 @@ const Contact = () => {
   const email = "contato@stivalarq.com.br";
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Contato
+    <section id="contact" className="relative py-20 md:py-32 overflow-hidden bg-[image:var(--gradient-contact-dark)]">
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 bg-[image:var(--gradient-mesh-enhanced)] opacity-30" />
+      <div className="absolute top-20 right-10 w-64 h-64 bg-teal-400/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+      
+      <div className="container relative z-10 mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-4">
+            <Sparkles className="w-4 h-4 text-amber-400" />
+            <span className="text-white/90 text-sm font-semibold">Entre em Contato</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-amber-400 via-white to-white bg-clip-text text-transparent">
+            Vamos Transformar Seu Projeto
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Se você busca um serviço técnico para seu projeto, consultoria, licenciamento, 
-            regularização ou algo relacionado, entre em contato. Será um prazer ajudá-lo 
-            a tomar a melhor decisão e oferecer todo o suporte necessário para criar algo 
-            único e vencedor, feito com total competência técnica e prioridades.
+          <p className="text-teal-100/80 max-w-2xl mx-auto text-base md:text-lg">
+            Se você busca um serviço técnico especializado, entre em contato. 
+            Será um prazer oferecer todo o suporte para criar algo único e vencedor.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
-          {/* Left Side - Contact Info */}
-          <div className="space-y-6 animate-slide-in-left">
-            <Card className="border-2 border-border hover:border-primary transition-colors">
+        <div className="grid lg:grid-cols-[35%_65%] gap-8 lg:gap-12 max-w-6xl mx-auto">
+          {/* Left Side - Contact Info Cards */}
+          <div className="space-y-4 md:space-y-6 animate-slide-in-left">
+            <Card className="border-0 backdrop-blur-xl bg-white/10 shadow-2xl hover:bg-white/15 hover:shadow-[var(--shadow-glow-teal)] transition-all duration-500 group">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-primary mb-6">Work Time</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <Clock className="w-6 h-6 text-amber-400" />
+                  Horário de Atendimento
+                </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+                    <Clock className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-foreground">Segunda - Sexta</p>
-                      <p className="text-muted-foreground">08:00 - 18:00</p>
+                      <p className="font-semibold text-white">Segunda - Sexta</p>
+                      <p className="text-teal-100/70">08:00 - 18:00</p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+                    <Mail className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
                       <a 
                         href={`mailto:${email}`}
-                        className="text-primary hover:underline break-all"
+                        className="text-teal-100 hover:text-white transition-colors break-all"
                       >
                         {email}
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+                    <Phone className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
                       <a 
                         href={`https://wa.me/${whatsappNumber}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline"
+                        className="text-teal-100 hover:text-white transition-colors"
                       >
                         (19) 99210-9655
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <Instagram className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
+                    <Instagram className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
                       <a 
                         href="https://www.instagram.com/arquitetostival/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline"
+                        className="text-teal-100 hover:text-white transition-colors"
                       >
                         @arquitetostival
                       </a>
                     </div>
                   </div>
                 </div>
+
+                {/* Trust Badge */}
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <div className="flex items-center gap-2 text-amber-400 text-sm">
+                    <CheckCircle2 className="w-5 h-5" />
+                    <span className="font-semibold">Resposta em até 2 horas</span>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
 
-          {/* Right Side - Contact Form */}
+          {/* Right Side - Premium Form */}
           <div className="animate-slide-in-right">
-            <Card className="border-2 border-border">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  Vamos conversar sobre o seu projeto de saúde?
+            <Card className="border-0 backdrop-blur-xl bg-white/10 shadow-2xl">
+              <CardContent className="p-6 md:p-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Vamos conversar sobre o seu projeto?
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-teal-100/70 mb-8">
                   Preencha o formulário e entraremos em contato via WhatsApp.
                 </p>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="relative">
                     <Input
                       name="name"
                       placeholder="Nome completo"
@@ -162,11 +177,11 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       maxLength={100}
-                      className="border-2 focus:border-primary"
+                      className="h-14 border-2 border-white/20 bg-white/5 text-white placeholder:text-white/50 focus:border-teal-300 focus:shadow-[0_0_20px_rgba(77,198,195,0.3)] transition-all"
                     />
                   </div>
                   
-                  <div>
+                  <div className="relative">
                     <Input
                       name="email"
                       type="email"
@@ -175,11 +190,11 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       maxLength={255}
-                      className="border-2 focus:border-primary"
+                      className="h-14 border-2 border-white/20 bg-white/5 text-white placeholder:text-white/50 focus:border-teal-300 focus:shadow-[0_0_20px_rgba(77,198,195,0.3)] transition-all"
                     />
                   </div>
                   
-                  <div>
+                  <div className="relative">
                     <Textarea
                       name="message"
                       placeholder="Mensagem"
@@ -188,22 +203,40 @@ const Contact = () => {
                       required
                       maxLength={1000}
                       rows={5}
-                      className="border-2 focus:border-primary resize-none"
+                      className="border-2 border-white/20 bg-white/5 text-white placeholder:text-white/50 focus:border-teal-300 focus:shadow-[0_0_20px_rgba(77,198,195,0.3)] resize-none transition-all"
                     />
+                    <span className="absolute bottom-3 right-3 text-xs text-white/40">
+                      {formData.message.length}/1000
+                    </span>
                   </div>
                   
                   <Button 
                     type="submit"
-                    variant="hero"
                     size="lg"
-                    className="w-full rounded-full"
+                    className="w-full h-14 text-base md:text-lg rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] hover:scale-105 transition-all duration-300"
                   >
-                    <Send className="mr-2" />
+                    <Send className="mr-2 h-5 w-5" />
                     ENVIAR MENSAGEM
                   </Button>
                 </form>
               </CardContent>
             </Card>
+          </div>
+        </div>
+
+        {/* Trust Badges Section */}
+        <div className="mt-12 md:mt-16 flex flex-wrap justify-center gap-6 md:gap-8 text-teal-100/70 text-sm animate-fade-in-up">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-amber-400" />
+            <span>Resposta Rápida</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-amber-400" />
+            <span>Atendimento Especializado</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-amber-400" />
+            <span>Consultoria Gratuita</span>
           </div>
         </div>
       </div>

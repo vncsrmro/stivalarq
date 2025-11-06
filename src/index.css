@@ -38,6 +38,25 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
+    /* Extended color palette */
+    --neutral-50: 180 20% 98%;
+    --neutral-100: 180 15% 96%;
+    --neutral-200: 180 12% 92%;
+    --neutral-800: 180 25% 15%;
+    --neutral-900: 180 30% 10%;
+    
+    --teal-50: 180 60% 97%;
+    --teal-100: 180 55% 92%;
+    --teal-300: 180 65% 55%;
+    --teal-600: 180 60% 35%;
+    --teal-700: 180 65% 28%;
+    --teal-800: 180 70% 22%;
+    --teal-900: 180 72% 18%;
+    
+    --amber-400: 40 95% 58%;
+    --amber-500: 38 92% 50%;
+    --amber-600: 35 85% 45%;
+    
     /* Custom healthcare architecture colors */
     --teal-dark: 180 65% 20%;
     --teal-primary: 180 60% 25%;
@@ -53,11 +72,20 @@ All colors MUST be HSL.
     --gradient-mesh: radial-gradient(at 40% 20%, hsla(180, 60%, 85%, 0.3) 0px, transparent 50%),
                      radial-gradient(at 80% 0%, hsla(180, 50%, 75%, 0.2) 0px, transparent 50%),
                      radial-gradient(at 0% 50%, hsla(180, 55%, 80%, 0.25) 0px, transparent 50%);
+    --gradient-contact-dark: linear-gradient(135deg, hsl(180 70% 22%) 0%, hsl(180 68% 26%) 50%, hsl(180 65% 20%) 100%);
+    --gradient-card-hover: linear-gradient(135deg, hsla(180, 60%, 40%, 0.1) 0%, hsla(180, 55%, 50%, 0.05) 100%);
+    --gradient-mesh-enhanced: 
+      radial-gradient(at 20% 30%, hsla(180, 70%, 40%, 0.12) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, hsla(180, 60%, 50%, 0.08) 0px, transparent 50%),
+      radial-gradient(at 40% 80%, hsla(35, 70%, 60%, 0.06) 0px, transparent 50%);
     
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(180 60% 25% / 0.08);
     --shadow-medium: 0 8px 30px hsl(180 60% 25% / 0.12);
     --shadow-strong: 0 12px 40px hsl(180 60% 25% / 0.18);
+    --shadow-card: 0 10px 40px hsl(180 60% 25% / 0.1);
+    --shadow-floating: 0 20px 60px hsl(180 60% 25% / 0.15);
+    --shadow-glow-teal: 0 0 30px hsla(180, 65%, 55%, 0.4);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
