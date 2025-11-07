@@ -10,35 +10,35 @@ import { z } from "zod";
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Nome é obrigatório").max(100, "Nome muito longo"),
   email: z.string().trim().email("Email inválido").max(255, "Email muito longo"),
-  message: z.string().trim().min(1, "Mensagem é obrigatória").max(1000, "Mensagem muito longa")
+  message: z.string().trim().min(1, "Mensagem é obrigatória").max(1000, "Mensagem muito longa"),
 });
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     try {
       const validatedData = contactSchema.parse(formData);
-      
+
       const whatsappNumber = "5519992109655";
       const message = encodeURIComponent(
         `*Nova mensagem do site*\n\n` +
-        `*Nome:* ${validatedData.name}\n` +
-        `*Email:* ${validatedData.email}\n` +
-        `*Mensagem:*\n${validatedData.message}`
+          `*Nome:* ${validatedData.name}\n` +
+          `*Email:* ${validatedData.email}\n` +
+          `*Mensagem:*\n${validatedData.message}`,
       );
-      
-      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-      
+
+      window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+
       setFormData({ name: "", email: "", message: "" });
-      
+
       toast({
         title: "Mensagem enviada!",
         description: "Você será redirecionado para o WhatsApp.",
@@ -55,14 +55,14 @@ const Contact = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   const whatsappNumber = "5519992109655";
-  const email = "contato@stivalarq.com.br";
+  const email = "contato@stivalarquitetura.com.br";
 
   return (
     <section id="contact" className="relative py-20 md:py-32 overflow-hidden bg-[image:var(--gradient-contact-dark)]">
@@ -70,7 +70,7 @@ const Contact = () => {
       <div className="absolute inset-0 bg-[image:var(--gradient-mesh-enhanced)] opacity-30" />
       <div className="absolute top-20 right-10 w-64 h-64 bg-teal-400/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
-      
+
       <div className="container relative z-10 mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
@@ -82,8 +82,8 @@ const Contact = () => {
             Vamos Transformar Seu Projeto
           </h2>
           <p className="text-teal-100/80 max-w-2xl mx-auto text-base md:text-lg">
-            Se você busca um serviço técnico especializado, entre em contato. 
-            Será um prazer oferecer todo o suporte para criar algo único e vencedor.
+            Se você busca um serviço técnico especializado, entre em contato. Será um prazer oferecer todo o suporte
+            para criar algo único e vencedor.
           </p>
         </div>
 
@@ -104,11 +104,11 @@ const Contact = () => {
                       <p className="text-teal-100/70">08:00 - 18:00</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
                     <Mail className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
-                      <a 
+                      <a
                         href={`mailto:${email}`}
                         className="text-teal-100 hover:text-white transition-colors break-all"
                       >
@@ -116,11 +116,11 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
                     <Phone className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
-                      <a 
+                      <a
                         href={`https://wa.me/${whatsappNumber}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -134,7 +134,7 @@ const Contact = () => {
                   <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
                     <Instagram className="w-5 h-5 text-teal-300 mt-1 flex-shrink-0" />
                     <div>
-                      <a 
+                      <a
                         href="https://www.instagram.com/arquitetostival/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -161,13 +161,9 @@ const Contact = () => {
           <div className="animate-slide-in-right">
             <Card className="border-0 backdrop-blur-xl bg-white/10 shadow-2xl">
               <CardContent className="p-6 md:p-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Vamos conversar sobre o seu projeto?
-                </h3>
-                <p className="text-teal-100/70 mb-8">
-                  Preencha o formulário e entraremos em contato via WhatsApp.
-                </p>
-                
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Vamos conversar sobre o seu projeto?</h3>
+                <p className="text-teal-100/70 mb-8">Preencha o formulário e entraremos em contato via WhatsApp.</p>
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="relative">
                     <Input
@@ -180,7 +176,7 @@ const Contact = () => {
                       className="h-14 border-2 border-white/20 bg-white/5 text-white placeholder:text-white/50 focus:border-teal-300 focus:shadow-[0_0_20px_rgba(77,198,195,0.3)] transition-all"
                     />
                   </div>
-                  
+
                   <div className="relative">
                     <Input
                       name="email"
@@ -193,7 +189,7 @@ const Contact = () => {
                       className="h-14 border-2 border-white/20 bg-white/5 text-white placeholder:text-white/50 focus:border-teal-300 focus:shadow-[0_0_20px_rgba(77,198,195,0.3)] transition-all"
                     />
                   </div>
-                  
+
                   <div className="relative">
                     <Textarea
                       name="message"
@@ -209,8 +205,8 @@ const Contact = () => {
                       {formData.message.length}/1000
                     </span>
                   </div>
-                  
-                  <Button 
+
+                  <Button
                     type="submit"
                     size="lg"
                     className="w-full h-14 text-base md:text-lg rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] hover:scale-105 transition-all duration-300"
