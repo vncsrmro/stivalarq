@@ -68,36 +68,6 @@ const Clients = () => {
               confiam no nosso trabalho
             </span>
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Projetos de arquitetura especializada em saúde que transformam espaços e elevam a experiência.
-          </p>
-        </div>
-
-        {/* Desktop Grid */}
-        <div className="hidden md:grid md:grid-cols-5 gap-6 lg:gap-8">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="group relative bg-card rounded-2xl border-2 border-border shadow-md hover:shadow-[var(--shadow-floating)] transition-all duration-500 hover:-translate-y-3 animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="aspect-video p-6 flex items-center justify-center">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-center text-sm text-muted-foreground pb-4 px-2 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {client.name}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile Carousel */}
-        <div className="md:hidden">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex gap-4 touch-pan-y">
               {clients.map((client, index) => (
@@ -139,8 +109,8 @@ const Clients = () => {
                   key={index}
                   onClick={() => emblaApi?.scrollTo(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${index === selectedIndex
-                      ? "w-6 bg-primary"
-                      : "w-2 bg-neutral-300 hover:bg-neutral-400"
+                    ? "w-6 bg-primary"
+                    : "w-2 bg-neutral-300 hover:bg-neutral-400"
                     }`}
                   aria-label={`Ir para cliente ${index + 1}`}
                 />
