@@ -144,6 +144,8 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
+                </div>
+
               </CardContent>
             </Card>
           </div>
