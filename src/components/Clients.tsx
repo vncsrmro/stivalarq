@@ -3,20 +3,18 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import cliente1 from "@/assets/cliente1.png";
 import cliente2 from "@/assets/cliente2.png";
-import clienteDraMaria from "@/assets/cliente-dra-maria.jpg";
 import clienteGoLaser from "@/assets/cliente-golaser.jpg";
 import clienteUnicooHemo from "@/assets/cliente-unicoo-hemo.jpg";
 
 const clients = [
   { name: "Unimed Santa Bárbara", logo: cliente1 },
   { name: "Unicoo Laboratório", logo: cliente2 },
-  { name: "Dra. Maria Inês Ferreira Leal", logo: clienteDraMaria },
   { name: "Go Laser Depilação", logo: clienteGoLaser },
   { name: "Unicoo Hemodinâmica", logo: clienteUnicooHemo },
 ];
 
 const Clients = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
     skipSnaps: false,
@@ -40,7 +38,7 @@ const Clients = () => {
 
     const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
     const onPointerDown = () => clearInterval(autoplay);
-    
+
     emblaApi.on("select", onSelect);
     emblaApi.on("pointerDown", onPointerDown);
     onSelect();
@@ -78,14 +76,14 @@ const Clients = () => {
         {/* Desktop Grid */}
         <div className="hidden md:grid md:grid-cols-5 gap-6 lg:gap-8">
           {clients.map((client, index) => (
-            <div 
+            <div
               key={index}
               className="group relative bg-card rounded-2xl border-2 border-border shadow-md hover:shadow-[var(--shadow-floating)] transition-all duration-500 hover:-translate-y-3 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-video p-6 flex items-center justify-center">
-                <img 
-                  src={client.logo} 
+                <img
+                  src={client.logo}
                   alt={client.name}
                   className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
                   loading="lazy"
@@ -103,14 +101,14 @@ const Clients = () => {
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex gap-4 touch-pan-y">
               {clients.map((client, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex-[0_0_80%] min-w-0"
                 >
                   <div className="bg-card rounded-2xl border-2 border-border shadow-lg h-full">
                     <div className="aspect-video p-6 flex items-center justify-center">
-                      <img 
-                        src={client.logo} 
+                      <img
+                        src={client.logo}
                         alt={client.name}
                         className="max-w-full max-h-full object-contain"
                         loading="lazy"
@@ -134,17 +132,16 @@ const Clients = () => {
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            
+
             <div className="flex gap-2">
               {clients.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => emblaApi?.scrollTo(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    index === selectedIndex 
-                      ? "w-6 bg-primary" 
+                  className={`h-2 rounded-full transition-all duration-300 ${index === selectedIndex
+                      ? "w-6 bg-primary"
                       : "w-2 bg-neutral-300 hover:bg-neutral-400"
-                  }`}
+                    }`}
                   aria-label={`Ir para cliente ${index + 1}`}
                 />
               ))}

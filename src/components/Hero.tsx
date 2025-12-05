@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import logoVertical from "@/assets/logo-vertical.png";
+import heroBg from "@/assets/hero-bg.png";
 
 const Hero = () => {
   const whatsappNumber = "5519992109655";
@@ -8,75 +8,65 @@ const Hero = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="hero" className="relative w-full overflow-hidden pt-20 min-h-screen bg-gradient-to-br from-background via-teal-50/30 to-background">
-      {/* Animated Background Elements */}
+    <section id="hero" className="relative w-full overflow-hidden pt-20 min-h-screen">
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient Mesh */}
-        <div className="absolute inset-0 bg-[image:var(--gradient-mesh)] opacity-40" />
-        
-        {/* Floating Circles */}
+        {/* Hero Background Image */}
+        <img
+          src={heroBg}
+          alt="Healthcare Architecture"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Dark Gradient Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/75 to-slate-900/85" />
+
+        {/* Subtle Accent Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/10" />
+
+        {/* Floating Animated Circles for Depth */}
         <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute top-40 right-[15%] w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
-        <div className="absolute bottom-32 left-[20%] w-80 h-80 bg-teal-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-        <div className="absolute bottom-20 right-[10%] w-48 h-48 bg-primary/15 rounded-full blur-2xl animate-float-delayed" />
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(77,198,195,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(77,198,195,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute bottom-32 right-[15%] w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-16 lg:pt-20">
         {/* Centered Content */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          
-          {/* Logo with Glow Effect */}
-          <div className="mb-8 md:mb-12 animate-fade-in">
-            <div className="relative group">
-              {/* Glow Background */}
-              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl scale-110 group-hover:bg-primary/30 transition-all duration-700 animate-glow-pulse" />
-              
-              {/* Logo */}
-              <img
-                src={logoVertical}
-                alt="G Stival Arquitetura"
-                className="relative w-32 md:w-40 lg:w-48 h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-          </div>
 
           {/* Badge */}
-          <div 
+          <div
             className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            <span className="text-primary text-sm font-semibold">✨ Especialista em Arquitetura para Saúde</span>
+            <span className="text-white/90 text-sm font-semibold">✨ Especialista em Arquitetura para Saúde</span>
           </div>
 
           {/* Main Title */}
-          <h1 
+          <h1
             className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <span className="text-foreground">Transformando Espaços,</span>
+            <span className="text-white">Transformando Espaços,</span>
             <br className="hidden sm:block" />
-            <span className="text-foreground"> Elevando Cuidados: </span>
+            <span className="text-white"> Elevando Cuidados: </span>
             <br />
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
               Arquitetura Especializada
             </span>
             <br className="hidden sm:block" />
-            <span className="text-foreground"> em Saúde ao Seu Alcance!</span>
+            <span className="text-white">em Saúde ao Seu Alcance!</span>
           </h1>
 
           {/* Description */}
-          <p 
-            className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mb-8 animate-fade-in"
+          <p
+            className="text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mb-8 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
             Projetos especializados de excelência que transformam a experiência de pacientes, equipes e clínicas.
           </p>
 
           {/* CTA Button */}
-          <div 
+          <div
             className="animate-fade-in"
             style={{ animationDelay: "0.4s" }}
           >
@@ -92,21 +82,21 @@ const Hero = () => {
           </div>
 
           {/* Stats Preview */}
-          <div 
+          <div
             className="flex flex-wrap justify-center gap-6 md:gap-12 mt-12 md:mt-16 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">11+</p>
-              <p className="text-sm text-muted-foreground">Anos de Experiência</p>
+              <p className="text-sm text-white/70">Anos de Experiência</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">11.000+</p>
-              <p className="text-sm text-muted-foreground">m² Projetados</p>
+              <p className="text-sm text-white/70">m² Projetados</p>
             </div>
             <div className="text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">50+</p>
-              <p className="text-sm text-muted-foreground">Projetos Entregues</p>
+              <p className="text-sm text-white/70">Projetos Entregues</p>
             </div>
           </div>
         </div>
