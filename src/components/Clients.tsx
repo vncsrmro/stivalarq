@@ -68,25 +68,45 @@ const Clients = () => {
               confiam no nosso trabalho
             </span>
           </h2>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
+            Projetos de arquitetura especializada em saúde que transformam espaços e elevam a experiência.
+          </p>
+        </div>
+
+        {/* Desktop Grid - Elegant Logo Display */}
+        <div className="hidden md:flex justify-center items-center gap-12 lg:gap-16 flex-wrap max-w-5xl mx-auto">
+          {clients.map((client, index) => (
+            <div
+              key={index}
+              className="group transition-all duration-500 animate-scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex gap-4 touch-pan-y">
               {clients.map((client, index) => (
                 <div
                   key={index}
-                  className="flex-[0_0_80%] min-w-0"
+                  className="flex-[0_0_70%] min-w-0"
                 >
-                  <div className="bg-card rounded-2xl border-2 border-border shadow-lg h-full">
-                    <div className="aspect-video p-6 flex items-center justify-center">
-                      <img
-                        src={client.logo}
-                        alt={client.name}
-                        className="max-w-full max-h-full object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-                    <p className="text-center text-sm text-muted-foreground pb-4 font-medium">
-                      {client.name}
-                    </p>
+                  <div className="bg-card rounded-xl border border-border shadow-sm p-8 flex items-center justify-center h-24">
+                    <img
+                      src={client.logo}
+                      alt={client.name}
+                      className="max-w-full max-h-full object-contain"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               ))}
@@ -97,7 +117,7 @@ const Clients = () => {
           <div className="flex justify-center items-center gap-4 mt-6">
             <button
               onClick={scrollPrev}
-              className="h-11 w-11 rounded-full bg-card border-2 border-border shadow-md flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
+              className="h-10 w-10 rounded-full bg-card border border-border shadow-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
               aria-label="Cliente anterior"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -109,8 +129,8 @@ const Clients = () => {
                   key={index}
                   onClick={() => emblaApi?.scrollTo(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${index === selectedIndex
-                    ? "w-6 bg-primary"
-                    : "w-2 bg-neutral-300 hover:bg-neutral-400"
+                      ? "w-6 bg-primary"
+                      : "w-2 bg-neutral-300 hover:bg-neutral-400"
                     }`}
                   aria-label={`Ir para cliente ${index + 1}`}
                 />
@@ -119,7 +139,7 @@ const Clients = () => {
 
             <button
               onClick={scrollNext}
-              className="h-11 w-11 rounded-full bg-card border-2 border-border shadow-md flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
+              className="h-10 w-10 rounded-full bg-card border border-border shadow-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
               aria-label="Próximo cliente"
             >
               <ChevronRight className="w-5 h-5" />

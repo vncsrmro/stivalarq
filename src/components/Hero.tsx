@@ -103,7 +103,7 @@ const Hero = () => {
       </div>
 
       {/* Scrolling Banner */}
-      <div className="relative bg-primary text-primary-foreground py-4 overflow-hidden mt-16 md:mt-24">
+      <div className="relative bg-primary text-primary-foreground py-4 overflow-hidden">
         <div className="flex whitespace-nowrap animate-scroll-x">
           <div className="flex items-center space-x-8 px-8">
             <span className="text-lg md:text-xl font-bold">• MAIS DE 11.000 M² PROJETADOS</span>
