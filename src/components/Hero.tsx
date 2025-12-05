@@ -11,22 +11,24 @@ const Hero = () => {
     <section id="hero" className="relative w-full overflow-hidden pt-20 min-h-screen">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Hero Background Image */}
+        {/* Hero Background Image - Optimized for LCP */}
         <img
           src={heroBg}
           alt="Healthcare Architecture"
           className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
 
         {/* Dark Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/75 to-slate-900/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-slate-900/90" />
 
         {/* Subtle Accent Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/10" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/10 mix-blend-overlay" />
 
-        {/* Floating Animated Circles for Depth */}
-        <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-32 right-[15%] w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
+        {/* Floating Animated Circles - DISABLED ON MOBILE FOR PERFORMANCE */}
+        <div className="hidden md:block absolute top-20 left-[10%] w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float" />
+        <div className="hidden md:block absolute bottom-32 right-[15%] w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float-delayed" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-16 lg:pt-20">

@@ -1,6 +1,6 @@
 import { useEffect, useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 import cliente1 from "@/assets/cliente1.png";
 import cliente2 from "@/assets/cliente2.png";
 import clienteGoLaser from "@/assets/cliente-golaser.jpg";
@@ -14,136 +14,70 @@ const clients = [
 ];
 
 const Clients = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    align: "center",
-    skipSnaps: false,
-  });
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-
-    const autoplay = setInterval(() => {
-      emblaApi.scrollNext();
-    }, 3000);
-
-    const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
-    const onPointerDown = () => clearInterval(autoplay);
-
-    emblaApi.on("select", onSelect);
-    emblaApi.on("pointerDown", onPointerDown);
-    onSelect();
-
-    return () => {
-      clearInterval(autoplay);
-      emblaApi.off("select", onSelect);
-      emblaApi.off("pointerDown", onPointerDown);
-    };
-  }, [emblaApi]);
+  // Configurado para ultra-performance no mobile
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "center",
+      skipSnaps: false,
+      dragFree: true,
+      containScroll: "trimSnaps"
+    },
+    [AutoScroll({ speed: 0.8, stopOnInteraction: false, stopOnMouseEnter: true })]
+  );
 
   return (
-    <section id="clients" className="py-16 md:py-24 bg-gradient-to-b from-neutral-100 to-neutral-50 relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(77,198,195,0.05),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(77,198,195,0.05),transparent_50%)]" />
-
+    <section id="clients" className="py-16 md:py-24 bg-gray-50/50 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
-            <span className="text-primary text-sm font-semibold">Clientes Satisfeitos</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-foreground">Empresas que </span>
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              confiam no nosso trabalho
-            </span>
+        <div className="text-center mb-12 animate-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Atendemos as Principais Empresas
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-            Projetos de arquitetura especializada em saúde que transformam espaços e elevam a experiência.
+          <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto">
+            Especialização e experiência nas principais marcas do mercado
           </p>
         </div>
 
-        {/* Desktop Grid - Elegant Logo Display */}
-        <div className="hidden md:flex justify-center items-center gap-12 lg:gap-16 flex-wrap max-w-5xl mx-auto">
+        {/* Desktop Grid - Cards Style (RV Tec Reference) */}
+        <div className="hidden md:grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group transition-all duration-500 animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 p-8 flex items-center justify-center h-32 transition-all duration-300"
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className="h-12 w-auto object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110"
+                className="h-12 w-auto max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-105"
                 loading="lazy"
+                width={120}
+                height={48}
               />
             </div>
           ))}
         </div>
 
-        {/* Mobile Carousel */}
-        <div className="md:hidden">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4 touch-pan-y">
-              {clients.map((client, index) => (
-                <div
-                  key={index}
-                  className="flex-[0_0_70%] min-w-0"
-                >
-                  <div className="bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-sm p-6 flex items-center justify-center h-20">
-                    <img
-                      src={client.logo}
-                      alt={client.name}
-                      className="max-w-full max-h-full object-contain"
-                      loading="lazy"
-                    />
-                  </div>
+        {/* Mobile View - High Performance AutoScroll with Cards */}
+        <div className="md:hidden overflow-hidden -mx-4 px-4" ref={emblaRef}>
+          <div className="flex touch-pan-y gap-4">
+            {clients.map((client, index) => (
+              <div
+                key={index}
+                className="flex-[0_0_70%] min-w-0" // Exibe um card por vez com peek
+              >
+                <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex items-center justify-center h-28 mx-2">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="h-10 w-auto max-w-full object-contain grayscale opacity-80"
+                    loading="lazy"
+                    width={100}
+                    height={40}
+                  />
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Carousel Controls */}
-          <div className="flex justify-center items-center gap-4 mt-6">
-            <button
-              onClick={scrollPrev}
-              className="h-10 w-10 rounded-full bg-card border border-border shadow-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
-              aria-label="Cliente anterior"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-
-            <div className="flex gap-2">
-              {clients.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => emblaApi?.scrollTo(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${index === selectedIndex
-                    ? "w-6 bg-primary"
-                    : "w-2 bg-neutral-300 hover:bg-neutral-400"
-                    }`}
-                  aria-label={`Ir para cliente ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={scrollNext}
-              className="h-10 w-10 rounded-full bg-card border border-border shadow-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary active:scale-95 transition-all"
-              aria-label="Próximo cliente"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
