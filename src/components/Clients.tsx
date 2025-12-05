@@ -33,7 +33,7 @@ const Clients = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 p-4 md:p-6 flex items-center justify-center h-24 md:h-32 transition-shadow duration-300"
+              className="group bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 p-4 md:p-6 flex items-center justify-center h-20 md:h-24 transition-shadow duration-300"
               style={{
                 contain: "layout style paint",
                 willChange: "auto" // Only use will-change during hover via CSS
@@ -43,8 +43,8 @@ const Clients = () => {
                 src={client.logo}
                 alt={`Logo ${client.name}`}
                 aspectRatio="aspect-auto"
-                containerClassName="h-10 md:h-12 w-auto max-w-full"
-                className="h-10 md:h-12 w-auto max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-[filter,opacity] duration-300"
+                containerClassName="h-8 md:h-10 w-auto max-w-full"
+                className="h-8 md:h-10 w-auto max-w-full object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-[filter,opacity] duration-300"
               />
             </div>
           ))}
