@@ -49,7 +49,7 @@ const Hero = () => {
             <br className="hidden sm:block" />
             <span className="text-white"> Elevando Cuidados: </span>
             <br />
-            <span className="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
+            <span className="bg-gradient-to-r from-amber-400 via-teal-300 to-amber-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
               Arquitetura Especializada
             </span>
             <br className="hidden sm:block" />
@@ -86,15 +86,15 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">11+</p>
+              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 via-teal-300 to-amber-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">11+</p>
               <p className="text-sm text-white/70">Anos de Experiência</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">11.000+</p>
+              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 via-teal-300 to-amber-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">11.000+</p>
               <p className="text-sm text-white/70">m² Projetados</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">50+</p>
+              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 via-teal-300 to-amber-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">50+</p>
               <p className="text-sm text-white/70">Projetos Entregues</p>
             </div>
           </div>
