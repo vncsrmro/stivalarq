@@ -100,7 +100,7 @@ const Clients = () => {
                   key={index}
                   className="flex-[0_0_70%] min-w-0"
                 >
-                  <div className="bg-card rounded-xl border border-border shadow-sm p-8 flex items-center justify-center h-24">
+                  <div className="bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-sm p-6 flex items-center justify-center h-20">
                     <img
                       src={client.logo}
                       alt={client.name}
@@ -129,8 +129,8 @@ const Clients = () => {
                   key={index}
                   onClick={() => emblaApi?.scrollTo(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${index === selectedIndex
-                      ? "w-6 bg-primary"
-                      : "w-2 bg-neutral-300 hover:bg-neutral-400"
+                    ? "w-6 bg-primary"
+                    : "w-2 bg-neutral-300 hover:bg-neutral-400"
                     }`}
                   aria-label={`Ir para cliente ${index + 1}`}
                 />
