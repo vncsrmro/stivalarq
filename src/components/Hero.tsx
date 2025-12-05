@@ -20,15 +20,12 @@ const Hero = () => {
           fetchPriority="high"
         />
 
-        {/* Dark Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-slate-900/90" />
-
-        {/* Subtle Accent Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/10 mix-blend-overlay" />
+        {/* Dark Overlay for Text Readability - Clean, no green tint */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-900/90" />
 
         {/* Floating Animated Circles - DISABLED ON MOBILE FOR PERFORMANCE */}
-        <div className="hidden md:block absolute top-20 left-[10%] w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="hidden md:block absolute bottom-32 right-[15%] w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float-delayed" />
+        <div className="hidden md:block absolute top-20 left-[10%] w-64 h-64 bg-amber-400/10 rounded-full blur-3xl animate-float" />
+        <div className="hidden md:block absolute bottom-32 right-[15%] w-80 h-80 bg-teal-300/10 rounded-full blur-3xl animate-float-delayed" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 pt-8 md:pt-16 lg:pt-20">
