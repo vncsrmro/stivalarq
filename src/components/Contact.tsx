@@ -30,9 +30,9 @@ const Contact = () => {
       const whatsappNumber = "5519992109655";
       const message = encodeURIComponent(
         `*Nova mensagem do site*\n\n` +
-          `*Nome:* ${validatedData.name}\n` +
-          `*Email:* ${validatedData.email}\n` +
-          `*Mensagem:*\n${validatedData.message}`,
+        `*Nome:* ${validatedData.name}\n` +
+        `*Email:* ${validatedData.email}\n` +
+        `*Mensagem:*\n${validatedData.message}`,
       );
 
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
@@ -65,7 +65,7 @@ const Contact = () => {
   const email = "contato@stivalarquitetura.com.br";
 
   return (
-    <section id="contact" className="relative py-20 md:py-32 overflow-hidden bg-[image:var(--gradient-contact-dark)]">
+    <section id="contact" className="relative py-12 md:py-20 overflow-hidden bg-[image:var(--gradient-contact-dark)]">
       {/* Decorative Elements */}
       <div className="absolute inset-0 bg-[image:var(--gradient-mesh-enhanced)] opacity-30" />
       <div className="absolute top-20 right-10 w-64 h-64 bg-teal-400/10 rounded-full blur-3xl" />
@@ -144,15 +144,6 @@ const Contact = () => {
                       </a>
                     </div>
                   </div>
-                </div>
-
-                {/* Trust Badge */}
-                <div className="mt-6 pt-6 border-t border-white/10">
-                  <div className="flex items-center gap-2 text-amber-400 text-sm">
-                    <CheckCircle2 className="w-5 h-5" />
-                    <span className="font-semibold">Resposta em até 2 horas</span>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           </div>
