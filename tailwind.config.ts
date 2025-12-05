@@ -167,6 +167,14 @@ export default {
             transform: "translateY(-10px)"
           }
         },
+        "float-delayed": {
+          "0%, 100%": {
+            transform: "translateY(0) rotate(0deg)"
+          },
+          "50%": {
+            transform: "translateY(-15px) rotate(3deg)"
+          }
+        },
         "glow": {
           "0%, 100%": {
             opacity: "1",
@@ -222,6 +230,7 @@ export default {
         "scale-in": "scale-in 0.4s ease-out",
         "scroll-x": "scroll-x 30s linear infinite",
         "float": "float 3s ease-in-out infinite",
+        "float-delayed": "float-delayed 4s ease-in-out infinite",
         "glow": "glow 2s ease-in-out infinite",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "shimmer": "shimmer 3s linear infinite",
