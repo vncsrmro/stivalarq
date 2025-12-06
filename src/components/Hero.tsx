@@ -50,7 +50,7 @@ const Hero = () => {
             <span className="text-white"> Elevando Cuidados: </span>
             <br />
             <span className="bg-gradient-to-r from-amber-400 via-teal-300 to-amber-400 bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-              Arquitetura Especializada
+              Arquitetura Especializada{" "}
             </span>
             <br className="hidden sm:block" />
             <span className="text-white">em Saúde ao Seu Alcance!</span>
