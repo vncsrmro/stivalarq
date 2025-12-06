@@ -234,7 +234,7 @@ export default {
         "float-delayed": "float-delayed 4s ease-in-out infinite",
         "glow": "glow 2s ease-in-out infinite",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
-        "shimmer": "shimmer 3s linear infinite",
+        "shimmer": "shimmer 8s linear infinite",
         "gradient-slow": "gradient-slow 6s ease infinite",
         "ripple": "ripple 0.6s ease-out"
       },
