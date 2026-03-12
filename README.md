@@ -1,73 +1,25 @@
-# Welcome to your Lovable project
+# 🏛️ Stival - Arquitetura e Consultoria
+### Plataforma Digital de Consultoria e Gestão de Projetos Arquitetônicos
 
-## Project info
+Este repositório contém o código-fonte da plataforma oficial da **Stival**, focada em oferecer uma experiência premium de consultoria em arquitetura, com interface moderna, performance otimizada e foco em conversão de leads.
 
-**URL**: https://lovable.dev/projects/0f846d02-9a8b-4fd6-8f0a-2b16c1c938c8
+[Acessar o site oficial →](https://www.stivalarquitetura.com.br/)
 
-## How can I edit this code?
+## 🛠 Tecnologias Utilizadas
 
-There are several ways of editing your application.
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,vite,figma,=8" />
+  </a>
+</p>
 
-**Use Lovable**
+- **Frontend:** React com TypeScript e Tailwind CSS para interface fluida e responsiva.
+- **Backend/Database:** Supabase para gestão dinâmica de conteúdos e formulários.
+- **Infra:** Deploy e CI/CD via Vercel para máxima performance.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0f846d02-9a8b-4fd6-8f0a-2b16c1c938c8) and start prompting.
+## 🚀 Funcionalidades Chave
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0f846d02-9a8b-4fd6-8f0a-2b16c1c938c8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **🎨 Design Minimalista:** Interface focada no portfólio visual da Stival.
+- **📱 Responsividade Total:** Otimizado para Desktop, Tablets e Mobile.
+- **⚡ Performance Core Web Vitals:** Carregamento rápido e SEO amigável.
+- **📊 Gestão de Leads:** Integração direta para captação de novos projetos de consultoria.
