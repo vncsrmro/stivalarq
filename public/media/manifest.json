@@ -1,0 +1,239 @@
+{
+  "hero": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTOS DE ENFERMAGEM ALA01 - UNIMED AMERICANA\\cena 6.png",
+    "original": [
+      5536,
+      3052
+    ],
+    "variants": [
+      {
+        "file": "hero-800.webp",
+        "width": 800,
+        "height": 441,
+        "bytes": 19794
+      },
+      {
+        "file": "hero-1600.webp",
+        "width": 1600,
+        "height": 882,
+        "bytes": 59418
+      },
+      {
+        "file": "hero-2200.webp",
+        "width": 2200,
+        "height": 1213,
+        "bytes": 94146
+      }
+    ]
+  },
+  "enfermagem": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTOS DE ENFERMAGEM ALA01 - UNIMED AMERICANA\\cena 1.png",
+    "original": [
+      1659,
+      948
+    ],
+    "variants": [
+      {
+        "file": "enfermagem-800.webp",
+        "width": 800,
+        "height": 457,
+        "bytes": 27538
+      },
+      {
+        "file": "enfermagem-1600.webp",
+        "width": 1600,
+        "height": 914,
+        "bytes": 79466
+      }
+    ]
+  },
+  "enfermagem-2": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTOS DE ENFERMAGEM ALA01 - UNIMED AMERICANA\\Cena 2.png",
+    "original": [
+      1315,
+      784
+    ],
+    "variants": [
+      {
+        "file": "enfermagem-2-800.webp",
+        "width": 800,
+        "height": 477,
+        "bytes": 28686
+      },
+      {
+        "file": "enfermagem-2-1600.webp",
+        "width": 1315,
+        "height": 784,
+        "bytes": 65404
+      }
+    ]
+  },
+  "enfermagem-3": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTOS DE ENFERMAGEM ALA01 - UNIMED AMERICANA\\cena 8.png",
+    "original": [
+      1375,
+      771
+    ],
+    "variants": [
+      {
+        "file": "enfermagem-3-800.webp",
+        "width": 800,
+        "height": 449,
+        "bytes": 24586
+      },
+      {
+        "file": "enfermagem-3-1600.webp",
+        "width": 1375,
+        "height": 771,
+        "bytes": 54892
+      }
+    ]
+  },
+  "uti": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\LEITOS DE UTI ISOLAMENTO - UNIMED AMERICANA\\cena 1.png",
+    "original": [
+      1232,
+      852
+    ],
+    "variants": [
+      {
+        "file": "uti-800.webp",
+        "width": 800,
+        "height": 553,
+        "bytes": 28592
+      },
+      {
+        "file": "uti-1600.webp",
+        "width": 1232,
+        "height": 852,
+        "bytes": 53214
+      }
+    ]
+  },
+  "uti-2": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\LEITOS DE UTI ISOLAMENTO - UNIMED AMERICANA\\cena 3.png",
+    "original": [
+      1232,
+      790
+    ],
+    "variants": [
+      {
+        "file": "uti-2-800.webp",
+        "width": 800,
+        "height": 513,
+        "bytes": 31448
+      },
+      {
+        "file": "uti-2-1600.webp",
+        "width": 1232,
+        "height": 790,
+        "bytes": 57826
+      }
+    ]
+  },
+  "uti-3": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\LEITOS DE UTI ISOLAMENTO - UNIMED AMERICANA\\cena 6.png",
+    "original": [
+      1232,
+      788
+    ],
+    "variants": [
+      {
+        "file": "uti-3-800.webp",
+        "width": 800,
+        "height": 512,
+        "bytes": 22730
+      },
+      {
+        "file": "uti-3-1600.webp",
+        "width": 1232,
+        "height": 788,
+        "bytes": 43866
+      }
+    ]
+  },
+  "unicoo": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTO DE COLETA UNICOO - PATIO 330\\FACHADA-FINAL-DRGUSTAVO__1 - Photo.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "variants": [
+      {
+        "file": "unicoo-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27674
+      },
+      {
+        "file": "unicoo-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 126996
+      }
+    ]
+  },
+  "unicoo-2": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTO DE COLETA UNICOO - PATIO 330\\FACHADA-FINAL-DRGUSTAVO__4 - Photo.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "variants": [
+      {
+        "file": "unicoo-2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21120
+      },
+      {
+        "file": "unicoo-2-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 74868
+      }
+    ]
+  },
+  "unicoo-3": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\POSTO DE COLETA UNICOO - PATIO 330\\FACHADA-FINAL-DRGUSTAVO__7 - Photo.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "variants": [
+      {
+        "file": "unicoo-3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20366
+      },
+      {
+        "file": "unicoo-3-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 115280
+      }
+    ]
+  },
+  "recepcao": {
+    "source": "MATERIAIS PARA SITE STIVAL ARQUITETURA\\imagens 3D\\02_RADIO01.jpg",
+    "original": [
+      1920,
+      1080
+    ],
+    "variants": [
+      {
+        "file": "recepcao-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34790
+      },
+      {
+        "file": "recepcao-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 115912
+      }
+    ]
+  }
+}

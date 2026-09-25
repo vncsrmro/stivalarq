@@ -1,0 +1,90 @@
+[
+  {
+    "file": "hero-mobile.mp4",
+    "bytes": 1027077,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 800,
+    "height": 450,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "hero-mobile.webm",
+    "bytes": 1245505,
+    "duration": 20.0,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 800,
+    "height": 450,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "hero.mp4",
+    "bytes": 4209859,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "hero.webm",
+    "bytes": 3737076,
+    "duration": 20.0,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "interlude-mobile.mp4",
+    "bytes": 689006,
+    "duration": 13.5,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 800,
+    "height": 450,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "interlude-mobile.webm",
+    "bytes": 877788,
+    "duration": 13.5,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 800,
+    "height": 450,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "interlude.mp4",
+    "bytes": 2713097,
+    "duration": 13.5,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "interlude.webm",
+    "bytes": 2448522,
+    "duration": 13.5,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  }
+]
