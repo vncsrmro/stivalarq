@@ -1,7 +1,51 @@
 [
   {
+    "file": "concept-mobile.mp4",
+    "bytes": 1811981,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 720,
+    "height": 960,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "concept-mobile.webm",
+    "bytes": 1485470,
+    "duration": 20.0,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 720,
+    "height": 960,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "concept.mp4",
+    "bytes": 4515742,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
+    "file": "concept.webm",
+    "bytes": 2946362,
+    "duration": 20.0,
+    "codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 1600,
+    "height": 900,
+    "audio": false,
+    "decode_ok": true
+  },
+  {
     "file": "hero-mobile.mp4",
-    "bytes": 1027077,
+    "bytes": 1389133,
     "duration": 20.0,
     "codec": "h264",
     "pixel_format": "yuv420p",
@@ -12,7 +56,7 @@
   },
   {
     "file": "hero-mobile.webm",
-    "bytes": 1245505,
+    "bytes": 1931097,
     "duration": 20.0,
     "codec": "vp9",
     "pixel_format": "yuv420p",
@@ -23,7 +67,7 @@
   },
   {
     "file": "hero.mp4",
-    "bytes": 4209859,
+    "bytes": 5480273,
     "duration": 20.0,
     "codec": "h264",
     "pixel_format": "yuv420p",
@@ -34,7 +78,7 @@
   },
   {
     "file": "hero.webm",
-    "bytes": 3737076,
+    "bytes": 5951080,
     "duration": 20.0,
     "codec": "vp9",
     "pixel_format": "yuv420p",
@@ -45,7 +89,7 @@
   },
   {
     "file": "interlude-mobile.mp4",
-    "bytes": 689006,
+    "bytes": 1043966,
     "duration": 13.5,
     "codec": "h264",
     "pixel_format": "yuv420p",
@@ -56,7 +100,7 @@
   },
   {
     "file": "interlude-mobile.webm",
-    "bytes": 877788,
+    "bytes": 1522234,
     "duration": 13.5,
     "codec": "vp9",
     "pixel_format": "yuv420p",
@@ -67,7 +111,7 @@
   },
   {
     "file": "interlude.mp4",
-    "bytes": 2713097,
+    "bytes": 4108510,
     "duration": 13.5,
     "codec": "h264",
     "pixel_format": "yuv420p",
@@ -78,7 +122,7 @@
   },
   {
     "file": "interlude.webm",
-    "bytes": 2448522,
+    "bytes": 4869784,
     "duration": 13.5,
     "codec": "vp9",
     "pixel_format": "yuv420p",

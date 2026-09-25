@@ -3,12 +3,15 @@ import subprocess,json,sys
 ROOT=Path(__file__).resolve().parents[1]
 FF=Path('E:/Tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe')
 files=json.loads((ROOT/'video-edit/sources.json').read_text(encoding='utf8'))
+assert all(Path(p).is_file() for p in files), 'Um dos takes originais nao foi encontrado.'
+assert all('VIDEO-ARCCA-HORI' not in Path(p).name.upper() for p in files), 'O video de referencia nao pode entrar no site.'
 out=ROOT/'public/videos';out.mkdir(exist_ok=True)
 work=ROOT/'video-edit'
 def run(args):
  subprocess.run([str(FF),'-hide_banner','-loglevel','error','-y',*args],check=True)
-# All clips are 24 fps. 0.5-second dissolves also blend the loop seam.
-for name,order,length in [('hero',[3,4,5,0,1],4.5),('interlude',[2,5,3],5.0)]:
+# The hero moves from welcome to clinical care. The second loop focuses on
+# healthcare spaces. Half-second dissolves also soften the loop seam.
+for name,order,length in [('hero',[2,0,4,3,1],4.5),('interlude',[0,4,2],5.0)]:
  fade=.5;args=[];filters=[]
  for i,idx in enumerate(order+[order[0]]):
   args+=['-ss','0.5','-t',str(length if i<len(order) else fade+.1),'-i',files[idx]]

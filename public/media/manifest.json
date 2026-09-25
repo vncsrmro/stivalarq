@@ -235,5 +235,45 @@
         "bytes": 115912
       }
     ]
+  },
+  "service-arquitetura": {
+    "source": "artwork/especialidades/service-arquitetura.png",
+    "kind": "render conceitual gerado para ilustrar especialidade",
+    "variants": [
+      "service-arquitetura-800.webp",
+      "service-arquitetura-1600.webp"
+    ]
+  },
+  "service-adequacoes": {
+    "source": "artwork/especialidades/service-adequacoes.png",
+    "kind": "render conceitual gerado para ilustrar especialidade",
+    "variants": [
+      "service-adequacoes-800.webp",
+      "service-adequacoes-1600.webp"
+    ]
+  },
+  "service-bim": {
+    "source": "artwork/especialidades/service-bim.png",
+    "kind": "render conceitual gerado para ilustrar especialidade",
+    "variants": [
+      "service-bim-800.webp",
+      "service-bim-1600.webp"
+    ]
+  },
+  "service-interiores": {
+    "source": "artwork/especialidades/service-interiores.png",
+    "kind": "render conceitual gerado para ilustrar especialidade",
+    "variants": [
+      "service-interiores-800.webp",
+      "service-interiores-1600.webp"
+    ]
+  },
+  "gustavo-atual": {
+    "source": "artwork/gustavo-stival-atual.png",
+    "kind": "foto fornecida pelo usuario",
+    "variants": [
+      "gustavo-atual-600.webp",
+      "gustavo-atual-1200.webp"
+    ]
   }
 }

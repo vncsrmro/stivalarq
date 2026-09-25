@@ -20,10 +20,10 @@ Para gerar a versão de publicação: `npm run build`. Os arquivos finais ficam 
 
 ## Vídeos e abertura
 
-Os seis vídeos fornecidos em `../videos` foram montados em dois loops sem áudio:
+Cinco takes de ambientes em `../videos` foram montados em dois loops sem áudio. `VIDEO-ARCCA-HORI.mp4` foi analisado apenas como referência para o [roteiro do filme conceitual de 20 segundos](ROTEIRO-VIDEO-CONCEITUAL-20S.md) e não integra os vídeos do site:
 
-- Hero: 20 segundos, cinco planos, transições de 0,5 segundo e retorno suave ao primeiro plano.
-- Interlúdio: 13,5 segundos, três planos hospitalares e retorno suave.
+- Hero: 20 segundos, cinco planos — recepção acolhedora, circulação hospitalar, sala de exame, quarto e atendimento —, transições de 0,5 segundo e retorno suave ao primeiro plano.
+- Interlúdio: 13,5 segundos, três planos de arquitetura para a saúde e retorno suave.
 - WebM VP9 e MP4 H.264 em 1600 × 900; versões de celular em 800 × 450. Todos em YUV 4:2:0 e 24 fps.
 - `public/videos`: arquivos finais e posters. `scripts/edit-videos.py`: edição reproduzível; `video-edit/sources.json`: fontes. Os originais estão preservados.
 - Para apenas reexportar os masters existentes, passar `--reuse-masters` ao script. Sem essa opção, a montagem é refeita.
@@ -36,8 +36,12 @@ O loader utiliza o símbolo aprovado, fundo marfim, linhas verticais e duas cort
 
 Hero com movimento sutil, texto revelado no scroll, portfólio horizontal fixado no desktop e empilhado no celular, galerias ampliadas com navegação por setas/Escape, menu expandido, especialidades em acordeão e formulário que prepara uma mensagem para WhatsApp. O visitante confirma o envio no próprio WhatsApp; não há banco de leads ou envio de e-mail conectado.
 
-Os trabalhos são identificados como estudos/visualizações 3D. Foram usados apenas os materiais fornecidos para representar os projetos; não foram adicionados números de obras, depoimentos ou resultados não verificados.
+Os trabalhos do portfólio são identificados como estudos/visualizações 3D e usam materiais fornecidos. As quatro imagens da seção Especialidade são renders conceituais gerados para ilustrar os serviços, identificados como tais na interface. O retrato da seção Quem está à frente foi atualizado com a foto fornecida do Gustavo. Não foram adicionados números de obras, depoimentos ou resultados não verificados.
 
 ## Verificação desta entrega
 
 Build de produção, verificação TypeScript e ESLint dos arquivos alterados. Revisão no navegador em desktop e 390 × 844, incluindo galerias, menu, acordeão, formulário e pausa de movimento. Sem imagens quebradas ou transbordamento horizontal nas larguras verificadas.
+
+## Atualização da seção Especialidade e do contato
+
+Os quatro originais dos renders conceituais estão em `artwork/especialidades/`; `scripts/prepare-specialty-media.py` gera as versões WebP usadas no site. A foto atual do Gustavo está em `artwork/gustavo-stival-atual.png`, e `scripts/prepare-gustavo.py` cria os arquivos leves para a página. O seletor de tipo de projeto é um componente com suporte a teclado e mensagem de validação.
