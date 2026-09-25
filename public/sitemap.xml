@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.stivalarquitetura.com.br/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.stivalarquitetura.com.br/preview.png</image:loc>
+      <image:title>Stival Arquitetura — Arquitetura que cuida de pessoas</image:title>
+      <image:caption>Projetos e consultoria de arquitetura especializada para a saúde por Gustavo Stival: hospitais, clínicas e laboratórios.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.stivalarquitetura.com.br/media/hero-1600.webp</image:loc>
+      <image:title>Stival Arquitetura para a Saúde</image:title>
+      <image:caption>Precisão técnica e sensibilidade humana em ambientes de saúde.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.stivalarquitetura.com.br/media/enfermagem-1600.webp</image:loc>
+      <image:title>Postos de enfermagem — Unimed Americana</image:title>
+      <image:caption>Projeto de posto de enfermagem com integração, visibilidade e fluxos otimizados para o ambiente hospitalar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.stivalarquitetura.com.br/media/uti-1600.webp</image:loc>
+      <image:title>Leitos de UTI e isolamento — Unimed Americana</image:title>
+      <image:caption>Ambientes de alta complexidade desenhados a partir da operação hospitalar e cuidado com o paciente.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.stivalarquitetura.com.br/media/unicoo-1600.webp</image:loc>
+      <image:title>Posto de coleta Pátio 330 — Unicoo Laboratório</image:title>
+      <image:caption>Arquitetura para diagnóstico unindo identidade, transparência e acolhimento.</image:caption>
+    </image:image>
+  </url>
+</urlset>

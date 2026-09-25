@@ -1,0 +1,43 @@
+# Stival Arquitetura
+
+> Arquitetura especializada para a saúde por Gustavo Stival. Projetos, consultoria técnica e modelagem BIM para hospitais, clínicas, consultórios médicos e laboratórios de diagnóstico. Precisão técnica aliada ao cuidado e acolhimento humano.
+
+## Visão Geral
+
+- **Nome Oficial**: Stival Arquitetura
+- **Arquiteto Titular**: Gustavo Stival (Arquiteto e Urbanista)
+- **Especialização**: Arquitetura para a Saúde (estabelecimentos assistenciais de saúde — EAS)
+- **Localização**: Americana, Estado de São Paulo, Brasil
+- **Atendimento**: Presencial no estado de São Paulo e consultoria/projetos em todo o território nacional
+- **Site Oficial**: [https://www.stivalarquitetura.com.br/](https://www.stivalarquitetura.com.br/)
+- **Telefone / WhatsApp**: [+55 (19) 99210-9655](https://wa.me/5519992109655)
+- **E-mail**: [contato@stivalarquitetura.com.br](mailto:contato@stivalarquitetura.com.br)
+- **Instagram**: [@arquitetostival](https://www.instagram.com/arquitetostival/)
+
+## Filosofia & Diferenciais
+
+A Stival Arquitetura parte do princípio de que **projetar para a saúde é compreender que cada espaço faz parte de uma vida**. Não se trata apenas de cumprir normas sanitárias frias, mas de estruturar decisões precisas que impactam a recuperação dos pacientes, a eficiência operacional das equipes médicas e de enfermagem e o acolhimento das famílias.
+
+1. **Rigor Técnico e Normativo**: Amplo domínio da legislação sanitária (RDC 50 ANVISA, normas ABNT de acessibilidade NBR 9050, exigências do Corpo de Bombeiros e vigilâncias sanitárias locais).
+2. **Fluxos Assistenciais Otimizados**: Separação clara e eficiente entre fluxos limpos e sujos, pacientes internados e visitantes, equipes e logística de insumos.
+3. **Metodologia BIM (Building Information Modeling)**: Compatibilização tridimensional antecipada de instalações prediais complexas (gases medicinais, climatização/pressurização de ar, elétrica de emergência, hidráulica especializada), evitando retrabalho e sobrecustos em obra.
+4. **Humanização e Conforto**: Ambientes que integram iluminação natural, materialidade acolhedora, acústica controlada e ergonomia, reduzindo o estresse inerente ao ambiente hospitalar.
+
+## Serviços Especializados
+
+- **Arquitetura para a Saúde**: Da leitura estratégica do programa de necessidades ao projeto executivo completo de hospitais gerais e especializados, clínicas médicas multidisciplinares, consultórios e laboratórios de análises clínicas.
+- **Consultoria e Adequações Regulatórias**: Diagnóstico de imóveis e instalações existentes, análise de viabilidade técnica, planos de reforma e expansão em conformidade com as exigências da Vigilância Sanitária e ANVISA.
+- **BIM e Gestão Integrada de Projetos**: Modelagem integrada multidisciplinar, compatibilização inteligente entre arquitetura e engenharia hospitalar, facilitação do processo de orçamentação e execução.
+- **Interiores e Humanização**: Desenho detalhado de recepções, salas de espera, consultórios, postos de enfermagem e leitos, dosando materiais assépticos de alta durabilidade com conforto térmico, tátil e visual.
+
+## Portfólio de Projetos Relevantes
+
+- **Postos de Enfermagem (Ala 01 — Unimed Americana)**: Estudo e redesenho do posto de enfermagem como núcleo de conexão entre equipe multidisciplinar, circulação e leitos. Foco em ergonomia, visibilidade direta dos pacientes e integração harmônica com o ambiente hospitalar.
+- **Leitos de UTI e Isolamento (Unimed Americana)**: Projeto de ambientes de alta complexidade com rigor no controle de assepsia, divisórias envidraçadas de alta performance acústica e visual, e estações de monitoramento focadas na operação ágil das equipes.
+- **Posto de Coleta Pátio 330 (Unicoo Laboratório)**: Concepção de posto de atendimento e diagnóstico laboratorial aliando transparência, identidade visual sofisticada e acolhimento imediato ao paciente desde o primeiro contato na recepção.
+
+## Documentação Detalhada para LLMs
+
+Para obter dados técnicos aprofundados, metodologias e detalhes regulatórios completos, consulte:
+- [Versão Completa para LLMs](https://www.stivalarquitetura.com.br/llms-full.txt)
+- [Mapa do Site (XML)](https://www.stivalarquitetura.com.br/sitemap.xml)

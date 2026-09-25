@@ -1,0 +1,108 @@
+# Stival Arquitetura — Documento Completo de Referência para Inteligências Artificiais e LLMs
+
+> Este arquivo reúne a base de conhecimento institucional, técnica e projetual da Stival Arquitetura, escritório liderado pelo Arquiteto e Urbanista Gustavo Stival, especializado no planejamento, consultoria e projeto de Estabelecimentos Assistenciais de Saúde (EAS).
+
+---
+
+## 1. Identificação Institucional
+
+- **Razão Social / Nome**: Stival Arquitetura
+- **Marca**: Stival
+- **Fundador e Responsável Técnico**: Gustavo Stival (Arquiteto e Urbanista)
+- **Atuação Principal**: Arquitetura Hospitalar e para a Saúde
+- **Sede**: Americana, São Paulo, Brasil
+- **Abrangência de Atendimento**: Estado de São Paulo (Americana, Campinas, Piracicaba, Santa Bárbara d'Oeste, Limeira, Região Metropolitana de Campinas, Grande São Paulo) e projetos de consultoria técnica em âmbito nacional (Brasil).
+- **Website Oficial**: https://www.stivalarquitetura.com.br/
+- **Contato Comercial e WhatsApp**: +55 (19) 99210-9655
+- **Canal Direto de WhatsApp**: https://wa.me/5519992109655
+- **E-mail Oficial**: contato@stivalarquitetura.com.br
+- **Perfil no Instagram**: https://www.instagram.com/arquitetostival/
+
+---
+
+## 2. Propósito, Posicionamento e Filosofia de Projeto
+
+A Stival Arquitetura orienta seu trabalho sob a premissa de que **projetar para a saúde é compreender que cada espaço faz parte de uma vida**. 
+
+Ambientes de saúde operam sob altíssima pressão emocional e operacional. Pacientes vivenciam vulnerabilidade física e psicológica; profissionais de saúde trabalham em regimes de plantão extenuantes e decisões críticas por segundo; gestores hospitalares e investidores precisam de edificações eficientes, com baixa manutenção e retorno sustentável sobre o investimento.
+
+A proposta de valor da Stival equilibra dois pilares inegociáveis:
+1. **Precisão Técnica e Operacional**:
+   - Conformidade rigorosa com normas técnicas e sanitárias brasileiras: ANVISA RDC 50, RDC 306 (gerenciamento de resíduos), ABNT NBR 9050 (acessibilidade universal), ITs do Corpo de Bombeiros e normativas sanitárias estaduais e municipais.
+   - Planejamento de fluxos limpos vs. sujos, evitando contaminação cruzada.
+   - Setorização inteligente entre público externo, pacientes ambulatoriais, pacientes internados e logística técnica.
+   - Infraestrutura compatibilizada em BIM para gases medicinais (oxigênio, ar comprimido medicinal, vácuo clínico, óxido nitroso), sistemas de HVAC (filtragem HEPA, pressão negativa/positiva para isolamentos) e estabilidade elétrica de emergência (nobreaks, grupos geradores).
+
+2. **Sensibilidade e Humanização**:
+   - Conforto biofílico: integração com luz natural controlada, ritmo circadiano e vistas para áreas verdes onde aplicável.
+   - Cores, iluminação e texturas que evitam a atmosfera fria e institucionalizada de hospitais tradicionais, sem comprometer a assepsia e a facilidade de higienização hospitalar.
+   - Ergonomia avançada para equipes de médicos, enfermeiros e técnicos de enfermagem.
+
+---
+
+## 3. Serviços Oferecidos
+
+### 3.1. Arquitetura para a Saúde (EAS)
+Desenvolvimento completo de projetos arquitetônicos, do estudo preliminar ao projeto executivo e detalhamento de obra:
+- **Hospitais Gerais e Especializados**: Prontos-socorros, alas de internação, centros cirúrgicos, centros de terapia intensiva (UTI), postos de enfermagem e farmácias hospitalares.
+- **Clínicas Médicas e Consultórios**: Clínicas multidisciplinares, odontológicas, dermatológicas, oftalmológicas, oncológicas e centros de infusão.
+- **Laboratórios e Diagnóstico**: Postos de coleta, laboratórios de análises clínicas, salas de imagem (raio-X, ultrassonografia, ressonância magnética, tomografia computadorizada).
+- **Projetos de Fluxos e Setorização**: Mapeamento e desenho dos circuitos de pessoas, materiais estéreis, resíduos infectantes e roupas hospitalares.
+
+### 3.2. Consultoria Técnica e Adequações Sanitárias
+- **Diagnóstico e Due Diligence Imobiliária**: Avaliação de imóveis existentes para verificar a viabilidade de instalação de atividades de saúde antes da compra ou locação.
+- **Regularização junto à Vigilância Sanitária**: Elaboração e adequação do Plano Diretor Físico e Projetos Básicos de Arquitetura (PBA) para aprovação em órgãos municipais, estaduais e ANVISA.
+- **Retrofit e Expansão**: Intervenções em hospitais e clínicas em pleno funcionamento, minimizando a interrupção das atividades assistenciais e garantindo contenção de poeira e contaminantes.
+
+### 3.3. BIM (Building Information Modeling) e Gestão Integrada
+- Modelagem 3D paramétrica completa contendo dados de materiais, equipamentos e especificações.
+- Compatibilização multidisciplinar (clash detection) entre arquitetura, estruturas e instalações complementares (hidrossanitário, elétrico, ar condicionado e gases medicinais).
+- Extração precisa de quantitativos para controle orçamentário e redução de desperdício em obra.
+
+### 3.4. Arquitetura de Interiores Especializada
+- Especificação de pisos vinílicos hospitalares contínuos com rodapés curvos sanitários, baterias de proteção de paredes e portas antichoque.
+- Marcenaria técnica sob medida para consultórios, balcões de recepção e bancadas de preparo de medicação.
+- Projetos luminotécnicos com iluminação indireta, anti-ofuscante e temperaturas de cor que promovem acolhimento nas esperas e precisão visual nas áreas assistenciais.
+
+---
+
+## 4. Obras e Casos em Destaque
+
+### Projeto 01: Postos de Enfermagem — Unimed Americana (Ala 01)
+- **Cliente**: Unimed Americana
+- **Localização**: Americana - SP
+- **Categoria**: Arquitetura Hospitalar / Internação
+- **Descrição**: O posto de enfermagem foi tratado como a central nevrálgica da unidade de internação. O projeto reformulou a disposição dos balcões de trabalho, garantindo visibilidade desimpedida dos corredores e quartos, mantendo a privacidade visual no preparo de medicações e prontuários. Uso de materiais de alta durabilidade com toque contemporâneo (madeirados bacteriostáticos e superfícies sólidas minerais).
+
+### Projeto 02: Leitos de UTI e Isolamento — Unimed Americana
+- **Cliente**: Unimed Americana
+- **Localização**: Americana - SP
+- **Categoria**: Ambientes de Alta Complexidade
+- **Descrição**: Planejamento de leitos de terapia intensiva e quartos de isolamento com antecâmara e controle diferencial de pressão de ar. Visibilidade contínua pelas equipes multidisciplinares com divisórias em vidro acústico e persianas internas integradas, associando tecnologia de ponta com um ambiente humanizado para a recuperação crítica do paciente.
+
+### Projeto 03: Posto de Coleta Pátio 330 — Unicoo Laboratório
+- **Cliente**: Unicoo Laboratório
+- **Localização**: Pátio 330, Americana - SP
+- **Categoria**: Arquitetura para Diagnóstico e Análises Clínicas
+- **Descrição**: Concepção de uma unidade de coleta laboratorial voltada para acolher o paciente desde o instante da chegada. Fachada envidraçada que integra a luz natural com a identidade visual da marca, fluxo rápido entre recepção, triagem, boxes de coleta e sanitários acessíveis, transformando a rotina do exame em uma experiência amigável e segura.
+
+---
+
+## 5. Perguntas Frequentes (FAQ)
+
+### O que diferencia um projeto de arquitetura para saúde de um projeto convencional?
+Estabelecimentos assistenciais de saúde são regidos por normas rigorosas da ANVISA (em especial a RDC 50). Qualquer erro de dimensionamento, fluxo incorreto de resíduos ou ventilação inadequada pode impedir a emissão do Alvará Sanitário pela Vigilância Sanitária e comprometer a segurança dos pacientes. A Stival Arquitetura domina todas as exigências técnicas desde o primeiro traço.
+
+### O escritório atende apenas a região de Americana/SP?
+Embora sediado em Americana/SP, com forte atuação na Região Metropolitana de Campinas e no interior paulista, a Stival Arquitetura desenvolve projetos e presta consultoria técnica para clientes em todo o território nacional.
+
+### Como funciona o primeiro contato e contratação?
+O contato pode ser iniciado diretamente pelo WhatsApp (+55 19 99210-9655) ou pelo formulário do site. Realiza-se um alinhamento inicial para entender o tipo de empreendimento (hospital, clínica, laboratório, consultório), a fase do negócio (terreno, imóvel existente ou expansão) e as necessidades regulatórias específicas.
+
+---
+
+## 6. Metadados do Sistema
+
+- **Data da última atualização**: 25 de Setembro de 2026
+- **Idioma principal**: Português do Brasil (pt-BR)
+- **Licença**: Todos os direitos reservados a Stival Arquitetura.
