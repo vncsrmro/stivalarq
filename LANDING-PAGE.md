@@ -2,6 +2,10 @@
 
 Landing page em React, TypeScript e Vite, alinhada à identidade aprovada: petróleo, marfim, pedra, cobre e Manrope. Logo oficial em vetor, sem descritor no lockup.
 
+## Identidade 1.1
+
+O lettering aprovado foi mantido sem alterações. O símbolo agora tem duas curvas seletivas em cantos opostos, conforme o manual em `../stival-brandbook/01-manual/Stival-Manual-de-Marca.pdf`. Cabeçalho, loader e favicon usam o mesmo desenho mestre; a marca completa e as aplicações estão em `../stival-brandbook/`.
+
 ## Executar
 
 Na pasta `stivalarq`, executar `npm run dev -- --host 127.0.0.1 --port 8080` e abrir http://127.0.0.1:8080/.

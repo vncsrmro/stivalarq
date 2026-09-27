@@ -9,7 +9,7 @@ const logoDark = '/brand/logo-petroleo.svg';
 const manifesto = 'Projetar para a saúde é compreender que cada espaço faz parte de uma vida.';
 const clamp = (n: number, min = 0, max = 1) => Math.min(max, Math.max(min, n));
 function Symbol({ className = '' }: { className?: string }) {
-  return <svg className={className} viewBox="0 0 120 108" fill="currentColor" aria-hidden="true"><path d="M0 0h120v28H32v38H0zM42 40h78v68H82V66H42zM0 77h57v31H0z" /></svg>;
+  return <svg className={className} viewBox="0 0 120 108" fill="currentColor" aria-hidden="true"><path d="M14 0H120V28H32V66H0V14C0 6.3 6.3 0 14 0ZM42 40H120V94C120 101.7 113.7 108 106 108H82V66H42ZM0 77H57V108H0Z" /></svg>;
 }
 function Picture({ name, alt = '', className = '', eager = false }: { name: string; alt?: string; className?: string; eager?: boolean }) {
   return <img className={className} src={`/media/${name}-1600.webp`} srcSet={`/media/${name}-800.webp 800w, /media/${name}-1600.webp 1600w${name === 'hero' ? ', /media/hero-2200.webp 2200w' : ''}`} sizes="(max-width: 700px) 100vw, 85vw" alt={alt} loading={eager ? 'eager' : 'lazy'} {...{ fetchpriority: eager ? 'high' : 'auto' }} decoding="async" />;

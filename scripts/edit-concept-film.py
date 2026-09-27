@@ -11,7 +11,7 @@ FFMPEG = Path('E:/Tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe')
 
 # Story order: Gustavo, drawing, materials, completed healthcare space.
 SHOTS = [
-    ('Man_examining_architectural_blue*', 2.0, 240),
+    ('Man_examining_architectural_blue*', 2.0, '640-3*n'),
     ('Hands_drawing_architectural_plan*', 0.5, 450),
     ('Architect_selecting_project_mate*', 0.5, 555),
     ('Camera_movement_in_health_center*', 0.5, 590),
