@@ -9,7 +9,7 @@ const logoDark = '/brand/logo-petroleo.svg';
 const manifesto = 'Projetar para a saúde é compreender que cada espaço faz parte de uma vida.';
 const clamp = (n: number, min = 0, max = 1) => Math.min(max, Math.max(min, n));
 function Symbol({ className = '' }: { className?: string }) {
-  return <svg className={className} viewBox="0 0 120 108" fill="currentColor" aria-hidden="true"><path d="M14 0H120V28H32V66H0V14C0 6.3 6.3 0 14 0ZM42 40H120V94C120 101.7 113.7 108 106 108H82V66H42ZM0 77H57V108H0Z" /></svg>;
+  return <svg className={className} viewBox="0 0 120 108" fill="currentColor" aria-hidden="true"><path d="M13 0H111C116 0 119 2 119 5C119 8 117 10 114 13C106 21 98 27 86 27H53A21 21 0 0 0 32 48V53C32 61 22 66 8 66A8 8 0 0 1 0 58V13A13 13 0 0 1 13 0ZM47 40H99A21 21 0 0 1 120 61V87A21 21 0 0 1 99 108H88C82 108 80 104 81 100C82 90 82 84 82 79A13 13 0 0 0 69 66H47C44 66 42 64 42 61V45C42 42 44 40 47 40ZM8 82C25 82 42 82 53 77C60 74 64 77 62 84C59 92 58 100 58 103C58 106 56 108 53 108H8A8 8 0 0 1 0 100V90A8 8 0 0 1 8 82Z" /></svg>;
 }
 function Picture({ name, alt = '', className = '', eager = false }: { name: string; alt?: string; className?: string; eager?: boolean }) {
   return <img className={className} src={`/media/${name}-1600.webp`} srcSet={`/media/${name}-800.webp 800w, /media/${name}-1600.webp 1600w${name === 'hero' ? ', /media/hero-2200.webp 2200w' : ''}`} sizes="(max-width: 700px) 100vw, 85vw" alt={alt} loading={eager ? 'eager' : 'lazy'} {...{ fetchpriority: eager ? 'high' : 'auto' }} decoding="async" />;
