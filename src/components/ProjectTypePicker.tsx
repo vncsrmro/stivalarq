@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
+import { trackEvent } from '@/lib/himetrica';
 
 const choices = [
   'Hospital ou unidade de saúde',
@@ -29,7 +30,9 @@ export function ProjectTypePicker({ value, onChange, invalid, buttonRef }: Props
     return () => document.removeEventListener('pointerdown', dismiss);
   }, [open]);
   const choose = (index: number) => {
-    onChange(choices[index]);
+    const selected = choices[index];
+    onChange(selected);
+    trackEvent('project_type_selected', { type: selected, index });
     setActive(index);
     setOpen(false);
     buttonRef.current?.focus();
