@@ -34,3 +34,52 @@ input:not([type=checkbox]){font-size:16px;min-height:48px}
 .consent{min-height:44px;align-items:flex-start;padding-block:8px;font-size:12px}
 .caption,.technical-note,.form-foot,small#phone-hint{font-size:12px}
 }
+/* Identidade Gustavo Stival v2 */
+:root{--ink:#fff;--paper:#081426;--copper:#66d9ff;--muted:#bac7dc;--line:#647c9f66}body{background:#081426;color:#fff}p{color:#bac7dc}h1,h2,h3{font-weight:700;letter-spacing:-.04em}em{font-weight:700;color:#9cb8ff}.topbar{background:#112440;color:#dce6f8;font-size:11px}.header{border-color:var(--line)}.header nav{font-size:14px;font-weight:600}.header img{width:280px}.nav-cta{border-color:#66d9ff}.hero-shell{background:#081426}.hero{min-height:0;padding-block:88px}.hero h1 em{color:#9cb8ff}.hero .intro,.hero .caption,.hero-sign p{color:#bac7dc}.hero .button,.button{background:#245beb;color:#fff;border-color:#245beb;border-radius:8px;font-size:15px}.hero .button:hover,.button:hover{background:#1948c6;border-color:#1948c6}.hero-sign strong{color:#fff}.document-stage{background:#112440;color:#fff;border:1px solid #647c9f66;border-radius:12px;box-shadow:0 24px 70px #0005}.document{background:#1b355b;color:#fff;border:1px solid #647c9f66;border-radius:12px;box-shadow:10px 18px 30px #0003;transform:rotate(-3deg)}.document h2 em,.doc-items span{color:#a8c3ff}.document p{color:#d1ddf0}.doc-bottom{border-color:#647c9f}.manifesto{background:#112440}.manifesto p,.manifesto strong{color:#fff}.section-heading>p:last-child,.topics p,.mentor p,.capture-grid>div>p:not(.eyebrow),.community-grid>div>p:not(.eyebrow){font-size:16px}.topics article>span,.eyebrow{color:#a8c3ff}.topics p{max-width:36ch}.technical-note,.caption{font-size:14px}.community{background:#112440}.community .eyebrow,.schedule>div>span{color:#a8c3ff}.community p{color:#bac7dc}.schedule p{font-size:16px}.schedule .caption{font-size:14px}.text-link{font-size:15px;border-color:#66d9ff}.portrait{background:#112440;border-radius:12px}.portrait img{object-position:center 25%}.portrait>span{background:#112440;color:#fff}.signature{color:#fff}.capture{background:#112440}.form-card{background:#081426;border:1px solid #647c9f;border-radius:12px;box-shadow:0 18px 48px #0003}.availability{font-size:14px;background:#112440;border-color:#66d9ff;color:#dce6f8}label{font-size:14px}input:not([type=checkbox]){border:1px solid #647c9f;border-radius:8px;color:#fff;font-size:16px}input::placeholder{color:#bac7dc}input:disabled{opacity:.8}.consent,.form-foot,small#phone-hint{font-size:14px}.privacy summary,.privacy p{font-size:14px}.footer img{width:280px}.footer p,.footer small{font-size:14px}.skip:focus{background:#112440;color:#fff}.reveal{transform:translateY(12px);transition:opacity .35s ease,transform .35s ease}.topics article:nth-child(2){transition-delay:.05s}.topics article:nth-child(3){transition-delay:.1s}.hero-copy,.document-stage{animation:hero-enter .4s both}@keyframes hero-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.wrap{width:calc(100% - 40px)}.header{padding-block:16px 8px}.hero{padding-block:48px 64px}.intro{font-size:16px}.hero .document-stage{padding:24px 22px}.document{transform:rotate(-2deg)}.section-heading>p:last-child,.topics p,.mentor p,.capture-grid>div>p:not(.eyebrow),.community-grid>div>p:not(.eyebrow){font-size:16px}.footer img{width:280px}.portrait img{height:auto;aspect-ratio:4/5;object-fit:cover}.caption,.technical-note,.form-foot,small#phone-hint{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero-copy,.document-stage{animation:none}}
+
+/* Revisão v2: contraste da comunidade e legibilidade dos auxiliares. */
+.community{color:#fff}
+.hero-sign p,.eyebrow,.mentor .eyebrow,.topics article>span,.signature span,.portrait>span{font-size:14px}
+.hero-sign .mini-mark{flex-shrink:0}
+.signature span,.portrait>span{letter-spacing:.08em}
+.portrait>span{position:static;display:block;padding:16px 20px}
+.header nav a,.text-link,.privacy summary{min-height:48px}
+#feedback[data-state=error]{color:#ffb4ab}
+@media(max-width:700px){.header nav .nav-cta{min-height:48px;font-size:14px}.hero-copy>.eyebrow{font-size:12px}.mentor .eyebrow{font-size:12px}.portrait>span{font-size:14px}}
+/* Identidade Perspectiva: azul, índigo e ouro acetinado. */
+body{background:#090f21;color:#f5f7fc}.hero-shell{background:#090f21}.hero-copy h1 em,.section h2 em,.journey h2 em,.capture h2 em{color:#e5c17b}.eyebrow,.stage-label,.topics article>span{color:#e5c17b}.button{background:linear-gradient(120deg,#143576,#315de8 48%,#5041b9);color:#fff;transition:transform .25s,box-shadow .25s}.button:hover{transform:translateY(-3px);box-shadow:0 12px 32px #315de866}.nav-cta{background:linear-gradient(120deg,#143576,#315de8 48%,#5041b9);color:white}.mini-mark{width:48px;height:48px;object-fit:contain;background:none;border:0}.document-stage{background:linear-gradient(145deg,#172d60,#161d3f 70%,#30235e);border-color:#8492bd55}.document{background:linear-gradient(145deg,#16284c,#101a33);color:#f5f7fc;border:1px solid #c9a86288;box-shadow:0 25px 65px #0006}.document h2 em{color:#e5c17b}.document .doc-description,.document .doc-items p,.document .doc-top,.document .doc-bottom{color:#d9e2f1}.doc-rule{background:linear-gradient(90deg,#b78a40,#f5dca1,#c59b50)}.manifesto{background:linear-gradient(110deg,#143576,#315de8 55%,#5041b9);color:#fff}.topics article{background:#131e36;border:1px solid #ffffff1e}.community{background:linear-gradient(125deg,#111d39,#1b2c62 60%,#251f50)}.schedule{background:#101a31;border:1px solid #ffffff29}.capture{background:linear-gradient(120deg,#122d64,#202965 60%,#30245c)}.form-card{background:#101b31;border:1px solid #ffffff33;color:#f5f7fc}.form-card input:not([type=checkbox]){background:#0c162a;color:white;border-color:#91a3bd}.form-card input::placeholder{color:#c3cedd}.form-card p,.form-card label,.form-card small{color:#d7e1f0}.journey{background:#101a31;padding:100px 0}.journey h2{font-size:clamp(36px,4vw,56px);line-height:1.12;letter-spacing:-.04em;max-width:800px}.journey h2 em{font-style:normal}.journey>.wrap>p:not(.eyebrow){max-width:700px;color:#cad5e6}.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.journey-grid article{padding:28px;background:#17243d;border:1px solid #ffffff20;border-radius:8px}.journey-grid span{color:#e5c17b;font-size:11px;letter-spacing:.12em;font-weight:700}.journey-grid h3{font-size:21px;margin:24px 0 10px}.journey-grid p{font-size:15px;color:#cad5e6;margin:0}@media(max-width:700px){.journey{padding:70px 0}.journey-grid{grid-template-columns:1fr}.journey-grid h3{margin-top:14px}}
+
+/* Revisão v3: respiro dos painéis, gradiente do CTA e legibilidade. */
+.hero .button,.button{background:linear-gradient(120deg,#143576,#315de8 48%,#5041b9);border-color:#7387c4}
+.hero .button:hover,.button:hover{background:linear-gradient(120deg,#122f69,#294fc8 48%,#44379e)}
+.header nav .nav-cta{padding:14px 18px;border:1px solid #7387c4;border-radius:8px;display:inline-flex;align-items:center}
+.topics{gap:18px;border-top:0;align-items:stretch}
+.topics article,.topics article+article{padding:28px;border:1px solid #ffffff29;border-radius:10px}
+.schedule{padding:8px 28px 24px;border-radius:12px}
+.schedule>div:first-child{border-top:0}
+.schedule .caption{margin-bottom:0}
+.doc-description,.doc-items p{font-size:14px}
+.doc-top>span:last-child,.document .eyebrow,.doc-bottom,.stage-label,.stage-bottom{font-size:11px}
+.hero-sign .mini-mark{border:0;border-radius:0}
+#feedback[data-state=error]{color:#ffb4ab}
+button:disabled:hover{transform:none;box-shadow:none}
+@media(max-width:1000px) and (min-width:701px){
+.hero{grid-template-columns:1fr 1fr;gap:28px}
+.document-stage{padding:20px 16px}
+.document{padding:20px 16px}
+.doc-top{gap:12px}
+.doc-top>span:first-child{font-size:20px}
+.topics{gap:12px}
+.topics article,.topics article+article{padding:22px 18px}
+.community-grid,.capture-grid,.mentor{gap:32px}
+.schedule{padding-inline:20px}
+}
+@media(max-width:700px){
+.topics article,.topics article+article{padding:24px}
+.schedule{padding:4px 20px 22px}
+.schedule>div{gap:20px}
+.header nav .nav-cta{padding:12px 18px}
+.hero{padding-block:48px 64px}
+}
