@@ -89,3 +89,7 @@ button:disabled:hover{transform:none;box-shadow:none}
 
 @font-face{font-family:MrDafoe;src:url("/teste1/assets/mr-dafoe.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
 .mentor .signature{font-family:MrDafoe,cursive;font-size:clamp(36px,4vw,48px)!important;line-height:1.15;font-weight:400;color:#66d9ff}.mentor .signature span{font-family:Manrope,Arial,sans-serif;font-size:14px;line-height:1.4;letter-spacing:.08em;color:#dce6f8;margin-top:8px}
+
+/* Assinatura de traco fino. */
+@font-face{font-family:Allison;src:url("assets/allison.ttf") format("truetype");font-weight:400;font-display:swap}
+.mentor .signature{font-family:Allison,cursive;font-size:clamp(48px,5vw,62px)!important;line-height:1;color:#66d9ff}
