@@ -86,3 +86,6 @@ button:disabled:hover{transform:none;box-shadow:none}
 
 /* Retrato completo, com identificação acima da imagem. */
 .portrait{background:linear-gradient(155deg,#6684ad,#a3bad1);display:flex;flex-direction:column}.portrait>span{position:static;text-align:center;background:transparent;color:#081426;padding:20px 16px;font-weight:700}.portrait img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center bottom}
+
+@font-face{font-family:MrDafoe;src:url("/teste1/assets/mr-dafoe.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+.mentor .signature{font-family:MrDafoe,cursive;font-size:clamp(36px,4vw,48px)!important;line-height:1.15;font-weight:400;color:#66d9ff}.mentor .signature span{font-family:Manrope,Arial,sans-serif;font-size:14px;line-height:1.4;letter-spacing:.08em;color:#dce6f8;margin-top:8px}
