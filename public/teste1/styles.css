@@ -93,3 +93,7 @@ button:disabled:hover{transform:none;box-shadow:none}
 /* Assinatura de traco fino. */
 @font-face{font-family:Allison;src:url("assets/allison.ttf") format("truetype");font-weight:400;font-display:swap}
 .mentor .signature{font-family:Allison,cursive;font-size:clamp(48px,5vw,62px)!important;line-height:1;color:#66d9ff}
+
+/* Apresentação antes do retrato no celular. */
+.mentor{grid-template-areas:"portrait copy" "portrait signature";grid-template-rows:auto auto;align-content:center;row-gap:0}.mentor .portrait{grid-area:portrait}.mentor>div:not(.portrait){grid-area:copy;align-self:end}.mentor .signature{grid-area:signature;align-self:start}
+@media(max-width:700px){.mentor{grid-template-areas:"copy" "portrait" "signature";grid-template-rows:auto auto auto;row-gap:0}.mentor .portrait{margin-top:24px}.mentor .signature{justify-self:center;text-align:center;border:0;padding:0 12px;margin:20px 0 0}}
